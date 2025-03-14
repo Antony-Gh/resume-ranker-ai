@@ -1,0 +1,127 @@
+@font-face {
+  font-display: swap;
+  font-style: normal;
+  src: url("../fonts/InterRegular.ttf");
+  font-family: "Inter";
+  font-weight: 400;
+}
+
+@font-face {
+  font-display: swap;
+  font-style: normal;
+  src: url("../fonts/MontserratRegular.ttf");
+  font-family: "Montserrat";
+  font-weight: 400;
+}
+
+@font-face {
+  font-display: swap;
+  font-style: normal;
+  src: url("../fonts/MontserratMedium.ttf");
+  font-family: "Montserrat";
+  font-weight: 500;
+}
+
+@font-face {
+  font-display: swap;
+  font-style: normal;
+  src: url("../fonts/MontserratSemiBold.ttf");
+  font-family: "Montserrat";
+  font-weight: 600;
+}
+
+@font-face {
+  font-display: swap;
+  font-style: normal;
+  src: url("../fonts/MulishRegular.ttf");
+  font-family: "Mulish";
+  font-weight: 400;
+}
+
+@font-face {
+  font-display: swap;
+  font-style: normal;
+  src: url("../fonts/MulishItalic.ttf");
+  font-family: "Mulish";
+  font-weight: 400;
+}
+
+@font-face {
+  font-display: swap;
+  font-style: normal;
+  src: url("../fonts/MulishBold.ttf");
+  font-family: "Mulish";
+  font-weight: 700;
+}
+
+@font-face {
+  font-display: swap;
+  font-style: normal;
+  src: url("../fonts/MulishSemiBold.ttf");
+  font-family: "Mulish";
+  font-weight: 600;
+}
+
+@font-face {
+  font-display: swap;
+  font-style: normal;
+  src: url("../fonts/OpenSansRegular.ttf");
+  font-family: "Open Sans";
+  font-weight: 400;
+}
+
+@font-face {
+  font-display: swap;
+  font-style: normal;
+  src: url("../fonts/OpenSansBold.ttf");
+  font-family: "Open Sans";
+  font-weight: 700;
+}
+
+@font-face {
+  font-display: swap;
+  font-style: normal;
+  src: url("../fonts/OpenSansSemiBold.ttf");
+  font-family: "Open Sans";
+  font-weight: 600;
+}
+
+@font-face {
+  font-display: swap;
+  font-style: normal;
+  src: url("../fonts/OpenSansExtraBold.ttf");
+  font-family: "Open Sans";
+  font-weight: 800;
+}
+
+@font-face {
+  font-display: swap;
+  font-style: normal;
+  src: url("../fonts/RobotoRegular.ttf");
+  font-family: "Roboto";
+  font-weight: 400;
+}
+
+@font-face {
+  font-display: swap;
+  font-style: normal;
+  src: url("../fonts/RobotoMedium.ttf");
+  font-family: "Roboto";
+  font-weight: 500;
+}
+
+@font-face {
+  font-display: swap;
+  font-style: normal;
+  src: url("../fonts/RobotoSemiBold.ttf");
+  font-family: "Roboto";
+  font-weight: 600;
+}
+
+@font-face {
+  font-display: swap;
+  font-style: normal;
+  src: url("../fonts/RobotoBold.ttf");
+  font-family: "Roboto";
+  font-weight: 700;
+}

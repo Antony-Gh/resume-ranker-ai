@@ -1,0 +1,447 @@
+/*=========== TABLE OF CONTENTS ===========
+1. Common CSS
+2. Page CSS
+==========================================*/
+
+/*-------------------------------------
+  1. Common CSS
+--------------------------------------*/
+.work-experience {
+    gap: var(--space-xs);
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: stretch;
+  }
+  
+  .work-education {
+    gap: var(--space-xs);
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .place-title {
+    align-self: stretch;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .place-name {
+    color: var(--light_blue_900) !important;
+    font-family: Mulish !important;
+    font-size: 5.16px !important;
+  }
+  
+  .place-name-1 {
+    color: var(--light_blue_900) !important;
+    font-family: Mulish !important;
+    font-size: 5.16px !important;
+    font-weight: 600 !important;
+  }
+  
+  .title-1 {
+    color: var(--black_900_01) !important;
+    font-family: Mulish !important;
+    font-size: 5.16px !important;
+  }
+  
+  .timeline {
+    color: var(--black_900_cc) !important;
+    letter-spacing: 0.07px;
+    font-family: Mulish !important;
+    text-transform: uppercase;
+    font-size: 3.44px !important;
+    line-height: 4px;
+    font-style: italic;
+  }
+  
+  .desc {
+    color: var(--gray_800) !important;
+    font-family: Mulish !important;
+    font-size: 4.3px !important;
+    line-height: 6px;
+  }
+  
+  .portfolio-link {
+    color: var(--black_900_01) !important;
+    font-family: Mulish !important;
+    font-size: 4.3px !important;
+  }
+  
+  .contact-3 {
+    gap: var(--space-sm);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .class-2k1 {
+    color: var(--gray_800) !important;
+    font-family: Mulish !important;
+    font-size: 4.3px !important;
+    width: 100%;
+    line-height: 6px;
+  }
+  
+  .new-resume {
+    color: var(--blue_gray_900) !important;
+  }
+  
+  /*-------------------------------------
+    2. Page CSS
+  --------------------------------------*/
+  .group-1023 {
+    margin-right: 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @media only screen and (max-width: 1050px) {
+      margin-right: 0px;
+    }
+  }
+  
+  .frame-34990 {
+    gap: var(--space-9xl);
+    display: flex;
+    align-self: stretch;
+    justify-content: center;
+    align-items: center;
+    @media only screen and (max-width: 1050px) {
+      flex-direction: column;
+    }
+  }
+  
+  .home-1 {
+    color: var(--black_900_01) !important;
+    font-weight: 700 !important;
+  }
+  
+  .group-1020 {
+    margin-top: 28px;
+    align-self: stretch;
+  }
+  
+  .frame-13-1 {
+    background-color: var(--gray_50);
+    padding: var(--space-13xl);
+    border-radius: var(--radius-md);
+    @media only screen and (max-width: 550px) {
+      padding: var(--space-7xl);
+    }
+  }
+  
+  .frame-34869 {
+    background-color: var(--white_a700_01);
+    padding: var(--space-3xl);
+    border-radius: var(--radius-md);
+    border: 0.5px solid var(--gray_400);
+  }
+  
+  .group-1151 {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: var(--space-7xl);
+    @media only screen and (max-width: 1050px) {
+      flex-direction: column;
+    }
+  }
+  
+  .frame-8-2 {
+    gap: var(--space-md);
+    align-self: center;
+    background-color: var(--indigo_50);
+    padding: 58px 52px;
+    border-radius: var(--radius-md);
+    @media only screen and (max-width: 1050px) {
+      padding: var(--space-7xl);
+    }
+  }
+  
+  .plus-svgrepo-com {
+    height: 88px;
+    width: 60%;
+    object-fit: contain;
+  }
+  
+  .group-1150 {
+    margin-top: 24px;
+    width: 74%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    @media only screen and (max-width: 1050px) {
+      width: 100%;
+    }
+  }
+  
+  .ai-powered-resume-1 {
+    font-family: Open Sans !important;
+    width: 64%;
+    line-height: 58px;
+    @media only screen and (max-width: 1050px) {
+      width: 100%;
+    }
+  }
+  
+  .ai-powered-resume-span-6 {
+    color: var(--blue_900);
+    font-weight: 700;
+  }
+  
+  .did-you-know-that {
+    width: 60%;
+    line-height: 23px;
+    @media only screen and (max-width: 1050px) {
+      width: 100%;
+    }
+  }
+  
+  .group-1021 {
+    margin-top: 32px;
+    align-self: stretch;
+  }
+  
+  .frame-14 {
+    background-color: var(--gray_50);
+    padding: var(--space-10xl);
+    border-radius: var(--radius-md);
+    @media only screen and (max-width: 550px) {
+      padding: var(--space-7xl);
+    }
+  }
+  
+  .group-1378 {
+    margin-bottom: 8px;
+    gap: 33px;
+    display: flex;
+    @media only screen and (max-width: 550px) {
+      flex-direction: column;
+    }
+  }
+  
+  .frame-8-1 {
+    background-color: var(--indigo_50);
+    width: 26%;
+    padding: var(--space-13xl);
+    border-radius: var(--radius-md);
+    @media only screen and (max-width: 550px) {
+      width: 100%;
+      padding: var(--space-7xl);
+    }
+  }
+  
+  .template-1 {
+    padding-top: var(--space-md);
+    padding-bottom: var(--space-md);
+    background-color: var(--white_a700_01);
+    box-shadow: var(--shadow-xs);
+    border-radius: var(--radius-xs);
+  }
+  
+  .title {
+    margin-bottom: 6px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .nina-patel {
+    color: var(--light_blue_900) !important;
+    margin-left: 12px;
+    font-family: Arima Madurai !important;
+    font-size: 12.04px !important;
+    @media only screen and (max-width: 1050px) {
+      margin-left: 0px;
+    }
+  }
+  
+  .ux-ui-designer {
+    color: var(--black_900_01) !important;
+    margin-left: 12px;
+    font-family: Mulish !important;
+    font-size: 5.16px !important;
+    @media only screen and (max-width: 1050px) {
+      margin-left: 0px;
+    }
+  }
+  
+  .group-1148 {
+    height: 236px;
+    margin-top: 14px;
+    align-self: stretch;
+    position: relative;
+    align-content: center;
+    @media only screen and (max-width: 1050px) {
+      height: auto;
+    }
+  }
+  
+  .group-1149 {
+    gap: var(--space-xl);
+    display: flex;
+    flex: 1;
+    align-items: center;
+  }
+  
+  .auto-layout-left {
+    gap: var(--space-xl);
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  
+  .skilled-ux-designer {
+    color: var(--black_900_01) !important;
+    font-family: Mulish !important;
+    font-size: 5.16px !important;
+    width: 94%;
+    line-height: 7px;
+    font-style: italic;
+    @media only screen and (max-width: 1050px) {
+      width: 100%;
+    }
+  }
+  
+  .group-1152 {
+    margin-left: 6px;
+    gap: var(--space-lg);
+    display: flex;
+    align-self: stretch;
+    flex-direction: column;
+    @media only screen and (max-width: 1050px) {
+      flex-direction: row;
+      margin-left: 0px;
+    }
+  }
+  
+  .auto-layout-right {
+    gap: var(--space-xl);
+    display: flex;
+    width: 34%;
+    flex-direction: column;
+  }
+  
+  .contact-2 {
+    gap: var(--space-xs);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .contact-4 {
+    gap: var(--space-xs);
+    display: flex;
+    align-self: stretch;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .mail-to-link {
+    color: var(--black_900_01) !important;
+    font-family: Mulish !important;
+    font-size: 4.3px !important;
+    text-decoration: underline;
+  }
+  
+  .image-20 {
+    height: 88px;
+    flex: 1;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 24%;
+    right: 0px;
+    left: 0px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .frame-34869-1 {
+    gap: var(--space-15xl);
+    display: flex;
+    background-color: var(--white_a700_01);
+    width: 16%;
+    flex-direction: column;
+    padding: var(--space-3xl);
+    border-radius: var(--radius-md);
+    border: 0.5px solid var(--gray_400);
+    @media only screen and (max-width: 550px) {
+      width: 100%;
+    }
+  }
+  
+  .frame-34927 {
+    gap: var(--space-9xl);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .edit {
+    height: 32px;
+    padding-left: var(--space-xl);
+    padding-right: var(--space-xl);
+    background-color: var(--indigo_50) !important;
+    width: 32px;
+    border-radius: 12px !important;
+  }
+  
+  .frame-34873 {
+    margin-bottom: 100px;
+    gap: var(--space-5xl);
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .frame-9-1 {
+    gap: var(--space-xl);
+    background-color: var(--gray_100);
+    display: flex;
+    align-items: center;
+    padding: var(--space-xl) var(--space-9xl);
+    border-radius: var(--radius-md);
+    @media only screen and (max-width: 550px) {
+      padding-left: var(--space-7xl);
+      padding-right: var(--space-7xl);
+    }
+  }
+  
+  .frame-13-2 {
+    height: 26px;
+    border-radius: var(--radius-md);
+  }
+  
+  .frame-10 {
+    gap: var(--space-xl);
+    background-color: var(--gray_100);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: var(--space-lg);
+    border-radius: var(--radius-md);
+  }
+  
+  .frame-15 {
+    gap: var(--space-xl);
+    background-color: var(--deep_orange_50);
+    display: flex;
+    padding: var(--space-lg) var(--space-9xl);
+    border-radius: var(--radius-md);
+    @media only screen and (max-width: 550px) {
+      padding-left: var(--space-7xl);
+      padding-right: var(--space-7xl);
+    }
+  }
+  
+  .delete {
+    color: var(--red_500) !important;
+  }
+  
+  .www-resumeranker-com-1 {
+    color: var(--gray_600_01) !important;
+    margin-top: 10px;
+  }
+  

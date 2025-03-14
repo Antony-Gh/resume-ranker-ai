@@ -1,0 +1,36 @@
+.cover {
+    background-color: var(--white_a700_01);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 216px 56px;
+    @media only screen and (max-width: 1440px) {
+      padding-top: var(--space-13xl);
+      padding-bottom: var(--space-13xl);
+    }
+  
+    @media only screen and (max-width: 1050px) {
+      padding: var(--space-7xl);
+    }
+  
+    @media only screen and (max-width: 550px) {
+      padding: var(--space-5xl);
+    }
+  }
+  
+  .image-19 {
+    height: 512px;
+    width: 100%;
+    object-fit: contain;
+    max-width: 1416px;
+    margin-left: auto;
+    margin-right: auto;
+    @media only screen and (max-width: 1440px) {
+      height: auto;
+    }
+  
+    @media only screen and (max-width: 1050px) {
+      height: auto;
+    }
+  }
+  

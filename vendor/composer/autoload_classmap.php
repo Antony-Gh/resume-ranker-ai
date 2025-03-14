@@ -6,6 +6,7 @@ $vendorDir = dirname(__DIR__);
 $baseDir = dirname($vendorDir);
 
 return array(
+    'App\\Http\\Controllers\\AuthController' => $baseDir . '/app/Http/Controllers/AuthController.php',
     'App\\Http\\Controllers\\Auth\\AuthenticatedSessionController' => $baseDir . '/app/Http/Controllers/Auth/AuthenticatedSessionController.php',
     'App\\Http\\Controllers\\Auth\\ConfirmablePasswordController' => $baseDir . '/app/Http/Controllers/Auth/ConfirmablePasswordController.php',
     'App\\Http\\Controllers\\Auth\\EmailVerificationNotificationController' => $baseDir . '/app/Http/Controllers/Auth/EmailVerificationNotificationController.php',
@@ -14,9 +15,15 @@ return array(
     'App\\Http\\Controllers\\Auth\\PasswordController' => $baseDir . '/app/Http/Controllers/Auth/PasswordController.php',
     'App\\Http\\Controllers\\Auth\\PasswordResetLinkController' => $baseDir . '/app/Http/Controllers/Auth/PasswordResetLinkController.php',
     'App\\Http\\Controllers\\Auth\\RegisteredUserController' => $baseDir . '/app/Http/Controllers/Auth/RegisteredUserController.php',
+    'App\\Http\\Controllers\\Auth\\SocialLoginController' => $baseDir . '/app/Http/Controllers/Auth/SocialLoginController.php',
     'App\\Http\\Controllers\\Auth\\VerifyEmailController' => $baseDir . '/app/Http/Controllers/Auth/VerifyEmailController.php',
     'App\\Http\\Controllers\\Controller' => $baseDir . '/app/Http/Controllers/Controller.php',
+    'App\\Http\\Controllers\\DashboardController' => $baseDir . '/app/Http/Controllers/DashboardController.php',
     'App\\Http\\Controllers\\ProfileController' => $baseDir . '/app/Http/Controllers/ProfileController.php',
+    'App\\Http\\Controllers\\ResumeController' => $baseDir . '/app/Http/Controllers/ResumeController.php',
+    'App\\Http\\Controllers\\SubscriptionController' => $baseDir . '/app/Http/Controllers/SubscriptionController.php',
+    'App\\Http\\Middleware\\AdminMiddleware' => $baseDir . '/app/Http/Middleware/AdminMiddleware.php',
+    'App\\Http\\Middleware\\RoleMiddleware' => $baseDir . '/app/Http/Middleware/RoleMiddleware.php',
     'App\\Http\\Requests\\Auth\\LoginRequest' => $baseDir . '/app/Http/Requests/Auth/LoginRequest.php',
     'App\\Http\\Requests\\ProfileUpdateRequest' => $baseDir . '/app/Http/Requests/ProfileUpdateRequest.php',
     'App\\Models\\User' => $baseDir . '/app/Models/User.php',
@@ -2661,6 +2668,7 @@ return array(
     'Laravel\\Socialite\\Two\\SlackOpenIdProvider' => $vendorDir . '/laravel/socialite/src/Two/SlackOpenIdProvider.php',
     'Laravel\\Socialite\\Two\\SlackProvider' => $vendorDir . '/laravel/socialite/src/Two/SlackProvider.php',
     'Laravel\\Socialite\\Two\\Token' => $vendorDir . '/laravel/socialite/src/Two/Token.php',
+    'Laravel\\Socialite\\Two\\TwitchProvider' => $vendorDir . '/laravel/socialite/src/Two/TwitchProvider.php',
     'Laravel\\Socialite\\Two\\TwitterProvider' => $vendorDir . '/laravel/socialite/src/Two/TwitterProvider.php',
     'Laravel\\Socialite\\Two\\User' => $vendorDir . '/laravel/socialite/src/Two/User.php',
     'Laravel\\Socialite\\Two\\XProvider' => $vendorDir . '/laravel/socialite/src/Two/XProvider.php',

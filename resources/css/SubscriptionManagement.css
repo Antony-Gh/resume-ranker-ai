@@ -1,0 +1,290 @@
+/*=========== TABLE OF CONTENTS ===========
+1. Common CSS
+2. Page CSS
+==========================================*/
+
+/*-------------------------------------
+  1. Common CSS
+--------------------------------------*/
+.dec-15-2024 {
+    margin-right: 72px;
+    @media only screen and (max-width: 1050px) {
+      margin-right: 0px;
+    }
+  }
+  
+  /*-------------------------------------
+    2. Page CSS
+  --------------------------------------*/
+  .newscreenbody-7 {
+    margin-bottom: 4px;
+    gap: var(--space-8xl);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .frame-34990-9 {
+    gap: var(--space-9xl);
+    display: flex;
+    align-self: stretch;
+    align-items: center;
+    @media only screen and (max-width: 1050px) {
+      flex-direction: column;
+    }
+  }
+  
+  .group-1038 {
+    margin-top: 28px;
+    gap: var(--space-3xl);
+    display: flex;
+    align-self: stretch;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .billing-summary {
+    margin-top: 44px;
+    font-family: Open Sans !important;
+  }
+  
+  .group-1275 {
+    gap: 58px;
+    display: flex;
+    align-self: stretch;
+    flex-direction: column;
+    @media only screen and (max-width: 550px) {
+      gap: 29px;
+    }
+  }
+  
+  .group-1043 {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .frame-34868-3 {
+    background-color: var(--gray_100);
+    border-radius: var(--radius-md);
+    border: 0.5px solid var(--gray_400);
+  }
+  
+  .group-1276 {
+    margin-bottom: 28px;
+    @media only screen and (max-width: 1050px) {
+      display: block;
+      overflow-x: auto;
+      white-space: nowrap;
+    }
+  }
+  
+  .date-1 {
+    color: var(--white_a700_01) !important;
+    margin-right: 118px;
+    font-family: Montserrat !important;
+  }
+  
+  .group-1282 {
+    padding-top: var(--space-11xl);
+    padding-bottom: var(--space-11xl);
+    display: flex;
+    flex-wrap: wrap;
+    @media only screen and (max-width: 550px) {
+      padding-top: var(--space-7xl);
+      padding-bottom: var(--space-7xl);
+    }
+  }
+  
+  .amount {
+    color: var(--white_a700_01) !important;
+    margin-right: 150px;
+    font-family: Montserrat !important;
+  }
+  
+  .group-1283 {
+    padding-top: var(--space-11xl);
+    padding-bottom: var(--space-11xl);
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: var(--space-7xl);
+    @media only screen and (max-width: 550px) {
+      padding-top: var(--space-7xl);
+      padding-bottom: var(--space-7xl);
+    }
+  }
+  
+  .invoice {
+    color: var(--white_a700_01) !important;
+    margin-right: 170px;
+    font-family: Montserrat !important;
+  }
+  
+  .group-1285 {
+    gap: var(--space-16xl);
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    @media only screen and (max-width: 1050px) {
+      gap: var(--space-7xl);
+    }
+  }
+  
+  .personal-tier {
+    margin-bottom: 8px;
+  }
+  
+  .group-1286 {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--space-7xl);
+  }
+  
+  .frame-34960-2 {
+    color: var(--blue_gray_900_02) !important;
+    padding-left: var(--space-3xl);
+    padding-right: var(--space-3xl);
+    font-size: 18px;
+    font-weight: 500;
+    background-color: var(--green_a700_1e) !important;
+    height: 36px;
+    min-width: 60px;
+    border-radius: 4px !important;
+  }
+  
+  .download-pdf-2 {
+    margin-right: 154px;
+    text-decoration: underline;
+  }
+  
+  .group-1288 {
+    padding-left: var(--space-13xl);
+    padding-right: var(--space-13xl);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    gap: var(--space-7xl);
+    @media only screen and (max-width: 550px) {
+      padding-left: var(--space-7xl);
+      padding-right: var(--space-7xl);
+    }
+  }
+  
+  .class-02 {
+    margin-top: 28px;
+  }
+  
+  .group-1289 {
+    gap: var(--space-16xl);
+    display: flex;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    @media only screen and (max-width: 1050px) {
+      gap: var(--space-7xl);
+    }
+  }
+  
+  .personal-tier-1 {
+    margin-top: 26px;
+  }
+  
+  .group-1290 {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: var(--space-7xl);
+  }
+  
+  .frame-34972-2 {
+    color: var(--blue_gray_900_02) !important;
+    margin-top: 26px;
+    padding-left: var(--space-3xl);
+    padding-right: var(--space-3xl);
+    font-size: 18px;
+    font-weight: 500;
+    background-color: var(--deep_orange_50) !important;
+    height: 36px;
+    min-width: 52px;
+    border-radius: 4px !important;
+  }
+  
+  .download-pdf-3 {
+    margin-bottom: 8px;
+    margin-right: 154px;
+    text-decoration: underline;
+  }
+  
+  .group-1315 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @media only screen and (max-width: 1050px) {
+      padding-left: var(--space-7xl);
+      padding-right: var(--space-7xl);
+    }
+  }
+  
+  .frame-13-6 {
+    margin-top: 28px;
+    z-index: 1;
+    background-color: var(--gray_50);
+    align-self: stretch;
+    position: relative;
+    padding: var(--space-3xl);
+    border-radius: var(--radius-md);
+  }
+  
+  .group-1299 {
+    gap: var(--space-16xl);
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    padding: var(--space-11xl) var(--space-13xl);
+    @media only screen and (max-width: 1050px) {
+      gap: var(--space-7xl);
+    }
+  
+    @media only screen and (max-width: 550px) {
+      padding: var(--space-7xl);
+    }
+  }
+  
+  .group-1302 {
+    padding-left: var(--space-13xl);
+    padding-right: var(--space-13xl);
+    gap: 134px;
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    @media only screen and (max-width: 1050px) {
+      gap: var(--space-7xl);
+    }
+  
+    @media only screen and (max-width: 550px) {
+      padding-left: var(--space-7xl);
+      padding-right: var(--space-7xl);
+    }
+  }
+  
+  .group-1306 {
+    padding-left: var(--space-13xl);
+    padding-right: var(--space-13xl);
+    gap: 132px;
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    @media only screen and (max-width: 1050px) {
+      gap: var(--space-7xl);
+    }
+  
+    @media only screen and (max-width: 550px) {
+      padding-left: var(--space-7xl);
+      padding-right: var(--space-7xl);
+    }
+  }
+  

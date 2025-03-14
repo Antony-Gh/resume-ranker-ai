@@ -1,0 +1,131 @@
+/*=========== Header CSS ===========*/
+.frame-1 {
+    padding-top: var(--space-xl);
+    padding-bottom: var(--space-xl);
+    display: flex;
+    background-color: var(--white_a700_01);
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid var(--gray_400);
+    margin-bottom: 10px;
+}
+
+.group-1131 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--space-7xl);
+
+    @media only screen and (max-width: 1050px) {
+        flex-direction: column;
+        padding-left: var(--space-7xl);
+        padding-right: var(--space-7xl);
+    }
+}
+
+.group-864 {
+    gap: var(--space-md);
+    display: flex;
+    align-items: center;
+}
+
+.group-1000004148 {
+    height: 60px;
+    padding-left: var(--space-xs);
+    padding-right: var(--space-xs);
+    background-color: var(--blue_900) !important;
+    width: 60px;
+    border-radius: 10px !important;
+}
+
+.resu-rank {
+    color: var(--blue_900) !important;
+    font-family: Open Sans !important;
+    font-size: 31.89px !important;
+}
+
+.frame-2 {
+    display: flex;
+}
+
+.group-863 {
+    gap: var(--space-15xl);
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+
+    @media only screen and (max-width: 768px) {
+        gap: var(--space-10xl);
+        justify-content: center;
+    }
+}
+
+.about-1 {
+    color: var(--blue_gray_900) !important;
+    font-family: Open Sans !important;
+}
+
+.frame-5 {
+    margin-right: 38px;
+    gap: var(--space-6xl);
+    display: flex;
+    align-items: center;
+
+    @media only screen and (max-width: 1050px) {
+        margin-right: 0px;
+    }
+
+    @media only screen and (max-width: 768px) {
+        flex-direction: column;
+        gap: var(--space-3xl);
+    }
+}
+
+.frame-3 {
+    color: var(--white_a700_01) !important;
+    padding-left: var(--space-9xl);
+    padding-right: var(--space-9xl);
+    font-family: Open Sans;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: var(--blue_900) !important;
+    height: 50px;
+    min-width: 112px;
+    border-radius: 12px !important;
+
+    @media only screen and (max-width: 550px) {
+        padding-left: var(--space-7xl);
+        padding-right: var(--space-7xl);
+    }
+}
+
+.line-1 {
+    height: 48px;
+    background-color: var(--blue_gray_900_02);
+    width: 1px;
+
+    @media only screen and (max-width: 768px) {
+        width: 48px;
+        height: 1px;
+    }
+}
+
+.frame-4 {
+    color: var(--blue_gray_900_02) !important;
+    padding-left: 23px;
+    padding-right: 23px;
+    font-family: Open Sans;
+    font-size: 20px;
+    font-weight: 600;
+    height: 50px;
+    min-width: 238px;
+    border-radius: 12px !important;
+    border: 1px solid var(--blue_gray_900_02) !important;
+
+    @media only screen and (max-width: 550px) {
+        padding-left: var(--space-7xl);
+        padding-right: var(--space-7xl);
+    }
+}

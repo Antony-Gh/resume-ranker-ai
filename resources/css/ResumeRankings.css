@@ -1,0 +1,193 @@
+/*=========== TABLE OF CONTENTS ===========
+1. Common CSS
+2. Page CSS
+==========================================*/
+
+/*-------------------------------------
+  1. Common CSS
+--------------------------------------*/
+.frame-34960 {
+    color: var(--blue_gray_900_02) !important;
+    margin-bottom: 16px;
+    padding-left: var(--space-14xl);
+    padding-right: var(--space-14xl);
+    font-size: 18px;
+    font-weight: 500;
+    background-color: var(--green_a700_1e) !important;
+    height: 36px;
+    min-width: 204px;
+    border-radius: 4px !important;
+    @media only screen and (max-width: 550px) {
+      padding-left: var(--space-7xl);
+      padding-right: var(--space-7xl);
+    }
+  }
+  
+  .johan-doe {
+    padding-left: var(--space-14xl);
+    padding-right: var(--space-14xl);
+    @media only screen and (max-width: 550px) {
+      padding-left: var(--space-7xl);
+      padding-right: var(--space-7xl);
+    }
+  }
+  
+  .group-1187 {
+    padding-left: var(--space-sm);
+    padding-right: var(--space-sm);
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: var(--space-7xl);
+  }
+  
+  .frame-34962 {
+    gap: var(--space-md);
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .class-12-4-2024 {
+    margin-right: 102px;
+    @media only screen and (max-width: 1050px) {
+      margin-right: 0px;
+    }
+  }
+  
+  /*-------------------------------------
+    2. Page CSS
+  --------------------------------------*/
+  .frame-34989-2 {
+    padding-left: var(--space-11xl);
+    padding-right: var(--space-11xl);
+    gap: var(--space-lg);
+    flex: 1;
+    display: flex;
+    align-items: center;
+    @media only screen and (max-width: 1050px) {
+      align-self: stretch;
+    }
+  
+    @media only screen and (max-width: 550px) {
+      padding-left: var(--space-7xl);
+      padding-right: var(--space-7xl);
+    }
+  }
+  
+  .frame-34880-1 {
+    gap: var(--space-xl);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .frame-34897-1 {
+    align-self: stretch;
+    display: flex;
+    justify-content: space-between;
+    gap: var(--space-7xl);
+  }
+  
+  .frame-34898-1 {
+    color: var(--blue_gray_900_02) !important;
+    padding-left: var(--space-9xl);
+    padding-right: var(--space-9xl);
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 600;
+    gap: var(--space-xl);
+    background-color: var(--green_50) !important;
+    height: 44px;
+    min-width: 280px;
+    border-radius: 12px !important;
+    @media only screen and (max-width: 550px) {
+      padding-left: var(--space-7xl);
+      padding-right: var(--space-7xl);
+    }
+  }
+  
+  .group-1026 {
+    margin-top: 32px;
+    align-self: stretch;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .candidate-name {
+    color: var(--white_a700_01) !important;
+    margin-right: 22px;
+    font-family: Montserrat !important;
+  }
+  
+  .group-1183 {
+    padding-top: var(--space-10xl);
+    padding-bottom: var(--space-10xl);
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: var(--space-7xl);
+    @media only screen and (max-width: 550px) {
+      padding-top: var(--space-7xl);
+      padding-bottom: var(--space-7xl);
+    }
+  }
+  
+  .insights {
+    color: var(--white_a700_01) !important;
+    font-family: Montserrat !important;
+    align-self: flex-end;
+  }
+  
+  .date {
+    color: var(--white_a700_01) !important;
+    margin-right: 132px;
+    font-family: Montserrat !important;
+  }
+  
+  .action {
+    color: var(--white_a700_01) !important;
+    padding-top: var(--space-11xl);
+    padding-bottom: var(--space-11xl);
+    padding-left: var(--space-sm);
+    font-family: Montserrat !important;
+    text-align: left;
+    @media only screen and (max-width: 550px) {
+      padding-top: var(--space-7xl);
+      padding-bottom: var(--space-7xl);
+    }
+  }
+  
+  .frame-34976-1 {
+    color: var(--blue_gray_900_02) !important;
+    margin-bottom: 16px;
+    padding-left: var(--space-9xl);
+    padding-right: var(--space-9xl);
+    font-size: 18px;
+    font-weight: 500;
+    background-color: var(--deep_orange_50) !important;
+    height: 36px;
+    min-width: 204px;
+    border-radius: 4px !important;
+    @media only screen and (max-width: 550px) {
+      padding-left: var(--space-7xl);
+      padding-right: var(--space-7xl);
+    }
+  }
+  
+  .group-1204 {
+    margin-top: 246px;
+    padding-left: 56px;
+    padding-right: 56px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @media only screen and (max-width: 1050px) {
+      padding-left: var(--space-7xl);
+      padding-right: var(--space-7xl);
+    }
+  }
+  

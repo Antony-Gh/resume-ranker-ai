@@ -1,0 +1,125 @@
+.group-1266 {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    padding: 50px;
+    @media only screen and (max-width: 1050px) {
+      padding-left: var(--space-7xl);
+      padding-right: var(--space-7xl);
+    }
+  }
+  
+  .popup-design {
+    background-color: var(--white_a700_01);
+    width: 54%;
+    display: flex;
+    justify-content: center;
+    padding: 52px 38px;
+    border-radius: var(--radius-lg);
+    @media only screen and (max-width: 1050px) {
+      width: 100%;
+      padding-top: var(--space-7xl);
+      padding-bottom: var(--space-7xl);
+    }
+  
+    @media only screen and (max-width: 550px) {
+      padding: var(--space-7xl);
+    }
+  }
+  
+  .group-1000004142 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .vuesax-bold-tick-circle {
+    height: 172px;
+    width: 28%;
+    object-fit: contain;
+  }
+  
+  .heading-3-staples {
+    margin-top: 28px;
+    margin-left: 36px;
+    font-family: Open Sans !important;
+    align-self: flex-start;
+    @media only screen and (max-width: 1050px) {
+      margin-left: 0px;
+    }
+  }
+  
+  .your-payment-is {
+    margin-top: 8px;
+    letter-spacing: -0.36px;
+    text-align: center;
+    align-self: stretch;
+    line-height: 34px;
+  }
+  
+  .your-payment-is-span {
+    font-weight: 700;
+  }
+  
+  .vector-2415 {
+    height: 1px;
+    margin-top: 36px;
+    background-color: var(--blue_900_30);
+    align-self: stretch;
+    width: 100%;
+  }
+  
+  .group-891 {
+    margin-top: 36px;
+    margin-left: 14px;
+    margin-right: 14px;
+    gap: var(--space-10xl);
+    display: flex;
+    align-self: stretch;
+    @media only screen and (max-width: 1050px) {
+      margin-left: 0px;
+      margin-right: 0px;
+    }
+  }
+  
+  .group-1000004055-1 {
+    color: var(--blue_900) !important;
+    padding-left: 33px;
+    padding-right: 33px;
+    font-size: 24px;
+    font-weight: 600;
+    width: 100%;
+    height: 74px;
+    border-radius: 36px !important;
+    border: 1px solid var(--blue_900) !important;
+    @media only screen and (max-width: 1050px) {
+      font-size: 22px;
+    }
+  
+    @media only screen and (max-width: 550px) {
+      padding-left: var(--space-7xl);
+      padding-right: var(--space-7xl);
+    }
+  }
+  
+  .group-1000004054 {
+    color: var(--white_a700_01) !important;
+    padding-left: var(--space-14xl);
+    padding-right: var(--space-14xl);
+    font-size: 24px;
+    font-weight: 600;
+    background-color: var(--blue_900) !important;
+    width: 100%;
+    height: 74px;
+    border-radius: 36px !important;
+    @media only screen and (max-width: 1050px) {
+      font-size: 22px;
+    }
+  
+    @media only screen and (max-width: 550px) {
+      padding-left: var(--space-7xl);
+      padding-right: var(--space-7xl);
+    }
+  }
+  

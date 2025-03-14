@@ -1,0 +1,199 @@
+/*=========== TABLE OF CONTENTS ===========
+1. Common CSS
+2. Page CSS
+==========================================*/
+
+/*-------------------------------------
+  1. Common CSS
+--------------------------------------*/
+.frame-14-1 {
+    gap: var(--space-9xl);
+    background-color: var(--light_green_500_1e);
+    width: 32%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: var(--space-sm);
+    border-radius: var(--radius-md);
+    @media only screen and (max-width: 1050px) {
+      width: 100%;
+    }
+  }
+  
+  .users-group-1 {
+    height: 156px;
+    width: 48%;
+    object-fit: contain;
+  }
+  
+  .frame-34916 {
+    background-color: var(--white_a700_01);
+    width: 36%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: var(--space-3xl) var(--space-xl);
+    border-radius: var(--radius-md);
+  }
+  
+  .class-2345 {
+    color: var(--light_green_500) !important;
+    align-self: flex-start;
+  }
+  
+  .users {
+    color: var(--light_green_500) !important;
+    z-index: 1;
+    position: relative;
+  }
+  
+  .line-2 {
+    height: 1px;
+    margin-top: -30px;
+    margin-bottom: 26px;
+    position: relative;
+    background-color: var(--light_green_500);
+    align-self: stretch;
+  }
+  
+  .class-01 {
+    margin-bottom: 28px;
+  }
+  
+  .total-users-2345-span-1 {
+    color: var(--blue_900);
+    font-size: 32px;
+  }
+  
+  /*-------------------------------------
+    2. Page CSS
+  --------------------------------------*/
+  .frame-7 {
+    width: 18%;
+    padding: var(--space-13xl);
+    border-right: 1px solid var(--gray_400);
+    @media only screen and (max-width: 1050px) {
+      width: 100%;
+      padding-left: var(--space-7xl);
+      padding-right: var(--space-7xl);
+    }
+  
+    @media only screen and (max-width: 550px) {
+      padding: var(--space-7xl);
+    }
+  }
+  
+  .group-1052 {
+    flex-direction: column;
+    display: flex;
+    height: 100vh;
+    position: sticky !important;
+    top: 0px;
+    overflow: auto;
+    width: 202px;
+  }
+  
+  .group-1112 {
+    display: flex;
+    align-self: stretch;
+    flex-direction: column;
+    width: 100%;
+    gap: 670px;
+    padding: 0px;
+    li {
+      width: 100%;
+    }
+  
+    a {
+      gap: var(--space-xl);
+      border-color: var(--gray_400);
+      border-style: solid;
+      color: var(--blue_gray_900);
+      font-weight: 500;
+      font-size: 18px;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      padding: 8px 8px 8px 20px;
+      &:hover {
+        background-color: var(--indigo_50) !important;
+      }
+    }
+  
+    span {
+      flex-grow: 1;
+    }
+  }
+  
+  .group-1342 {
+    gap: 52px;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    @media only screen and (max-width: 1050px) {
+      align-self: stretch;
+      padding-left: var(--space-7xl);
+      padding-right: var(--space-7xl);
+    }
+  
+    @media only screen and (max-width: 550px) {
+      gap: var(--space-10xl);
+    }
+  }
+  
+  .group-1055 {
+    gap: var(--space-10xl);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .frame-13-7 {
+    margin-bottom: 12px;
+    background-color: var(--gray_50);
+    padding: var(--space-xl) var(--space-md);
+    border-radius: var(--radius-md);
+  }
+  
+  .dhi-group-84 {
+    padding-top: var(--space-11xl);
+    padding-bottom: var(--space-11xl);
+    align-self: flex-end;
+    display: flex;
+    @media only screen and (max-width: 550px) {
+      padding-top: var(--space-7xl);
+      padding-bottom: var(--space-7xl);
+    }
+  }
+  
+  .johan-doe-3 {
+    margin-bottom: 30px;
+  }
+  
+  .frame-34920 {
+    margin-left: 36px;
+    margin-right: 32px;
+    align-self: stretch;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--space-7xl);
+    @media only screen and (max-width: 1050px) {
+      flex-direction: column;
+      margin-left: 0px;
+      margin-right: 0px;
+    }
+  }
+  
+  .frame-34919 {
+    gap: 55px;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    @media only screen and (max-width: 1050px) {
+      align-self: stretch;
+      gap: var(--space-7xl);
+    }
+  }
+  

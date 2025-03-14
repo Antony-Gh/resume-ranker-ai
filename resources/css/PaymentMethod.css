@@ -1,0 +1,293 @@
+/*=========== TABLE OF CONTENTS ===========
+1. Common CSS
+2. Page CSS
+==========================================*/
+
+/*-------------------------------------
+  1. Common CSS
+--------------------------------------*/
+.frame-34903 {
+    background-color: var(--white_a700_01);
+    display: flex;
+    padding: var(--space-4xl);
+    border-radius: var(--radius-xs);
+    border: 0.5px solid var(--gray_400);
+  }
+  
+  .group-1000003921-3 {
+    gap: var(--space-4xl);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .card-number--span-1 {
+    color: var(--red_300);
+  }
+  
+  .group-1000003918-9 {
+    color: var(--blue_gray_500) !important;
+    padding-left: var(--space-5xl);
+    padding-right: var(--space-5xl);
+    letter-spacing: -0.25px;
+    font-size: 18px;
+    border-color: var(--blue_gray_500);
+    border-width: 1px;
+    background-color: var(--white_a700_01) !important;
+    width: 54%;
+    height: 54px;
+    border-radius: 10px !important;
+  }
+  
+  /*-------------------------------------
+    2. Page CSS
+  --------------------------------------*/
+  .newscreenbody-6 {
+    margin-bottom: 4px;
+    gap: 58px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @media only screen and (max-width: 550px) {
+      gap: 29px;
+    }
+  }
+  
+  .group-1265 {
+    gap: var(--space-13xl);
+    display: flex;
+    flex-direction: column;
+    @media only screen and (max-width: 1050px) {
+      padding-left: var(--space-7xl);
+      padding-right: var(--space-7xl);
+    }
+  }
+  
+  .group-954 {
+    margin-right: 14px;
+    gap: var(--space-11xl);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    @media only screen and (max-width: 1050px) {
+      margin-right: 0px;
+    }
+  }
+  
+  .frame-13-4 {
+    background-color: var(--gray_50);
+    align-self: stretch;
+    padding: var(--space-9xl);
+    border-radius: var(--radius-md);
+    @media only screen and (max-width: 550px) {
+      padding: var(--space-7xl);
+    }
+  }
+  
+  .frame-34902 {
+    background-color: var(--white_a700_01);
+    display: flex;
+    padding: var(--space-6xl) var(--space-4xl);
+    border-radius: var(--radius-xs);
+    border: 1.5px solid var(--blue_900);
+  }
+  
+  .user {
+    height: 28px;
+  }
+  
+  .paypal {
+    height: 36px;
+  }
+  
+  .frame-34904 {
+    background-color: var(--white_a700_01);
+    display: flex;
+    padding: var(--space-3xl);
+    border-radius: var(--radius-xs);
+    border: 0.5px solid var(--gray_400);
+  }
+  
+  .thumbs-up-5 {
+    height: 42px;
+  }
+  
+  .stripe {
+    height: 36px;
+    object-fit: cover;
+  }
+  
+  .frame-34906 {
+    background-color: var(--white_a700_01);
+    display: flex;
+    padding: var(--space-5xl);
+    border-radius: var(--radius-xs);
+    border: 0.5px solid var(--gray_400);
+  }
+  
+  .cursor {
+    height: 32px;
+  }
+  
+  .frame-34868-2 {
+    margin-right: 14px;
+    background-color: var(--gray_50);
+    padding: var(--space-10xl);
+    border-radius: var(--radius-md);
+    @media only screen and (max-width: 1050px) {
+      margin-right: 0px;
+    }
+  
+    @media only screen and (max-width: 550px) {
+      padding: var(--space-7xl);
+    }
+  }
+  
+  .group-1393 {
+    margin-bottom: 50px;
+    gap: var(--space-10xl);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .group-955 {
+    gap: var(--space-13xl);
+    display: flex;
+    align-self: stretch;
+    flex-direction: column;
+  }
+  
+  .group-1262 {
+    display: flex;
+    @media only screen and (max-width: 1050px) {
+      flex-direction: column;
+    }
+  }
+  
+  .group-1261 {
+    gap: var(--space-12xl);
+    display: flex;
+    width: 34%;
+    flex-direction: column;
+    @media only screen and (max-width: 1050px) {
+      width: 100%;
+    }
+  }
+  
+  .group-1000003918-7 {
+    color: var(--blue_gray_500) !important;
+    padding-left: var(--space-5xl);
+    padding-right: var(--space-5xl);
+    letter-spacing: -0.25px;
+    font-family: Inter;
+    font-size: 18px;
+    border-color: var(--blue_gray_500);
+    border-width: 1px;
+    background-color: var(--white_a700_01) !important;
+    width: 92%;
+    height: 54px;
+    border-radius: 10px !important;
+  }
+  
+  .group-1000003918-8 {
+    color: var(--blue_gray_500) !important;
+    padding-left: var(--space-5xl);
+    padding-right: var(--space-5xl);
+    letter-spacing: -0.25px;
+    font-size: 18px;
+    border-color: var(--blue_gray_500);
+    border-width: 1px;
+    background-color: var(--white_a700_01) !important;
+    width: 92%;
+    height: 54px;
+    border-radius: 10px !important;
+  }
+  
+  .group-946 {
+    padding-left: var(--space-12xl);
+    padding-right: var(--space-12xl);
+    gap: var(--space-11xl);
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    @media only screen and (max-width: 1050px) {
+      align-self: stretch;
+    }
+  
+    @media only screen and (max-width: 550px) {
+      padding-left: var(--space-7xl);
+      padding-right: var(--space-7xl);
+    }
+  }
+  
+  .group-952 {
+    gap: 42px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .group-1259 {
+    gap: var(--space-md);
+    align-self: stretch;
+    display: flex;
+    align-items: center;
+  }
+  
+  .basic-checkbox-checked {
+    height: 34px;
+  }
+  
+  .i-acknowledge-that {
+    margin-left: 40px;
+    font-weight: 400 !important;
+    @media only screen and (max-width: 1050px) {
+      margin-left: 0px;
+    }
+  }
+  
+  .i-acknowledge-that-span-1 {
+    color: var(--blue_900);
+  }
+  
+  .group-1000004055 {
+    color: var(--blue_900) !important;
+    padding-left: 33px;
+    padding-right: 33px;
+    font-size: 24px;
+    font-weight: 600;
+    height: 74px;
+    min-width: 284px;
+    border-radius: 36px !important;
+    border: 1px solid var(--blue_900) !important;
+    @media only screen and (max-width: 1050px) {
+      font-size: 22px;
+    }
+  
+    @media only screen and (max-width: 550px) {
+      padding-left: var(--space-7xl);
+      padding-right: var(--space-7xl);
+    }
+  }
+  
+  .group-1000004053 {
+    color: var(--white_a700_01) !important;
+    padding-left: var(--space-14xl);
+    padding-right: var(--space-14xl);
+    font-size: 24px;
+    font-weight: 600;
+    background-color: var(--blue_900) !important;
+    height: 74px;
+    min-width: 284px;
+    border-radius: 36px !important;
+    @media only screen and (max-width: 1050px) {
+      font-size: 22px;
+    }
+  
+    @media only screen and (max-width: 550px) {
+      padding-left: var(--space-7xl);
+      padding-right: var(--space-7xl);
+    }
+  }
+  

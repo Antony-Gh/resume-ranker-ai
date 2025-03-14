@@ -1,0 +1,106 @@
+/*=========== TABLE OF CONTENTS ===========
+1. Common CSS
+2. Page CSS
+==========================================*/
+
+/*-------------------------------------
+  1. Common CSS
+--------------------------------------*/
+.class-87-100 {
+    margin-right: 30px;
+    @media only screen and (max-width: 1050px) {
+      margin-right: 0px;
+    }
+  }
+  
+  .group-1243 {
+    gap: 31px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .frame-34960-1 {
+    color: var(--blue_gray_900_02) !important;
+    padding-left: var(--space-3xl);
+    padding-right: var(--space-3xl);
+    font-size: 18px;
+    font-weight: 500;
+    background-color: var(--green_a700_1e) !important;
+    height: 36px;
+    min-width: 108px;
+    border-radius: 4px !important;
+  }
+  
+  /*-------------------------------------
+    2. Page CSS
+  --------------------------------------*/
+  .newscreenbody-4 {
+    gap: 380px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @media only screen and (max-width: 1050px) {
+      gap: 285px;
+    }
+  
+    @media only screen and (max-width: 550px) {
+      gap: 190px;
+    }
+  }
+  
+  .group-1009 {
+    gap: 36px;
+    display: flex;
+    align-self: stretch;
+    flex-direction: column;
+  }
+  
+  .group-1006 {
+    margin-right: 6px;
+    gap: var(--space-11xl);
+    display: flex;
+    flex-direction: column;
+    @media only screen and (max-width: 1050px) {
+      margin-right: 0px;
+    }
+  }
+  
+  .frame-34897-3 {
+    align-self: stretch;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--space-7xl);
+    @media only screen and (max-width: 1050px) {
+      flex-direction: column;
+    }
+  }
+  
+  .frame-34898-3 {
+    gap: var(--space-xl);
+    background-color: var(--green_50);
+    display: flex;
+    padding: var(--space-3xl);
+    border-radius: var(--radius-md);
+  }
+  
+  .vector-2 {
+    height: 18px;
+  }
+  
+  .frame-13-3 {
+    margin-right: 6px;
+    background-color: var(--gray_50);
+    padding: var(--space-3xl);
+    border-radius: var(--radius-md);
+    @media only screen and (max-width: 1050px) {
+      margin-right: 0px;
+    }
+  }
+  
+  .score-1 {
+    color: var(--white_a700_01) !important;
+    margin-right: 20px;
+    font-family: Montserrat !important;
+  }
+  

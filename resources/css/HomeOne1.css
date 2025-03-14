@@ -1,0 +1,152 @@
+/* Minified CSS */
+.ai-powered-resume-span-1 {
+  color: var(--blue_gray_900_02);
+  font-weight: 800
+}
+
+.group-888,
+.group-1133 {
+  display: flex;
+  justify-content: center
+}
+
+.group-1130 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start
+}
+
+.frame-13 {
+  padding: 0 var(--space-15xl);
+  position: relative;
+  background-color: var(--gray_50_01);
+  align-self: stretch;
+  border-radius: var(--radius-md);
+}
+
+.group-1129 {
+  gap: var(--space-15xl);
+  display: flex;
+  align-items: center;
+}
+
+.group-1128 {
+  width: 48%;
+  display: flex;
+  flex-direction: column;
+}
+
+.ai-powered-resume {
+  font-family: Open Sans !important;
+  line-height: 58px
+}
+
+.ai-powered-resume-span-2 {
+  color: var(--blue_900);
+  font-weight: 800
+}
+
+.resumeranker-ai {
+  margin-top: 12px;
+  width: 86%;
+  line-height: 23px;
+}
+
+.frame-9 {
+  margin-top: 54px;
+  display: flex;
+  align-items: center;
+}
+
+.frame-8 {
+  color: var(--blue_gray_900) !important;
+  padding: 0 var(--space-10xl);
+  font-size: 18px;
+  font-weight: 500;
+  gap: var(--space-xl);
+  height: 46px;
+  min-width: 242px;
+  border-radius: 12px !important;
+}
+
+.lock,
+.crown-1 {
+  height: 26px;
+  width: 26px;
+  object-fit: contain
+}
+
+.crown-1 {
+  height: 24px
+}
+
+.class-22635593-6648536 {
+  height: 450px;
+  width: 50%;
+  object-fit: contain;
+}
+
+.home {
+  gap: var(--space-15xl);
+  background-color: var(--white_a700_01);
+  display: flex;
+  width: 100%;
+  flex-direction: column
+}
+
+.about {
+  color: var(--blue_gray_900) !important;
+  margin-left: 272px;
+  font-family: Montserrat !important;
+  font-weight: 600 !important;
+}
+
+.take-a-subscription {
+  color: var(--blue_gray_900) !important;
+  margin-bottom: 8px;
+  margin-left: 10px;
+  align-self: flex-end;
+  text-decoration: underline;
+}
+
+@media (max-width:1050px) {
+
+  .about,
+  .take-a-subscription {
+    margin-left: 0
+  }
+
+  .about,
+  .group-1129,
+  .group-1128,
+  .resumeranker-ai,
+  .class-22635593-6648536 {
+    width: 100%
+  }
+
+  .group-1129 {
+    flex-direction: column
+  }
+
+  .group-1133 {
+    padding: 0 var(--space-7xl)
+  }
+}
+
+@media (max-width:550px) {
+
+  .frame-13,
+  .frame-8 {
+    padding: 0 var(--space-7xl)
+  }
+
+  .crown-1,
+  .take-a-subscription {
+    margin-left: 0
+  }
+
+  .frame-9 {
+    flex-direction: column
+  }
+}

@@ -1,0 +1,169 @@
+/*=========== TABLE OF CONTENTS ===========
+1. Common CSS
+2. Page CSS
+==========================================*/
+
+/*-------------------------------------
+  1. Common CSS
+--------------------------------------*/
+.frame-14-4 {
+    gap: var(--space-8xl);
+    display: flex;
+    background-color: var(--light_green_500_1e);
+    width: 32%;
+    flex-direction: column;
+    justify-content: center;
+    padding: var(--space-6xl);
+    border-radius: var(--radius-md);
+    @media only screen and (max-width: 1050px) {
+      width: 100%;
+    }
+  }
+  
+  .frame-427318919 {
+    gap: var(--space-3xl);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .line-3 {
+    height: 0.5px;
+    background-color: var(--gray_400);
+    align-self: stretch;
+    width: 100%;
+  }
+  
+  .frame-427318908 {
+    gap: var(--space-xl);
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .frame-427318909-1 {
+    gap: var(--space-2xl);
+    display: flex;
+    align-items: center;
+  }
+  
+  .growth-chart-graph {
+    height: 80px;
+    width: 38%;
+    object-fit: contain;
+  }
+  
+  /*-------------------------------------
+    2. Page CSS
+  --------------------------------------*/
+  .group-1372 {
+    gap: var(--space-13xl);
+    display: flex;
+    align-items: flex-start;
+    @media only screen and (max-width: 1050px) {
+      flex-direction: column;
+    }
+  }
+  
+  .group-965 {
+    align-self: center;
+    width: 18%;
+    @media only screen and (max-width: 1050px) {
+      width: 100%;
+      padding-left: var(--space-7xl);
+      padding-right: var(--space-7xl);
+    }
+  }
+  
+  .group-1104 {
+    display: flex;
+    align-self: stretch;
+    flex-direction: column;
+    width: 100%;
+    gap: 668px;
+    padding: 0px;
+    li {
+      width: 100%;
+    }
+  
+    a {
+      gap: var(--space-xl);
+      color: var(--blue_gray_900);
+      font-weight: 500;
+      font-size: 18px;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      padding: 8px 8px 8px 20px;
+      border-radius: var(--radius-md);
+      border-bottom: 1px solid var(--gray_400);
+      &:hover {
+        background-color: var(--indigo_50) !important;
+      }
+    }
+  
+    span {
+      flex-grow: 1;
+    }
+  }
+  
+  .group-1106 {
+    gap: var(--space-xl);
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .group-966 {
+    margin-top: 32px;
+    gap: var(--space-13xl);
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: flex-start;
+    @media only screen and (max-width: 1050px) {
+      align-self: stretch;
+      padding-left: var(--space-7xl);
+      padding-right: var(--space-7xl);
+    }
+  }
+  
+  .group-925 {
+    margin-right: 280px;
+    gap: var(--space-13xl);
+    display: flex;
+    align-self: stretch;
+    @media only screen and (max-width: 1050px) {
+      flex-direction: column;
+      margin-right: 0px;
+    }
+  }
+  
+  .frame-17 {
+    gap: var(--space-8xl);
+    display: flex;
+    background-color: var(--indigo_50);
+    width: 30%;
+    flex-direction: column;
+    padding: var(--space-7xl);
+    border-radius: var(--radius-md);
+    @media only screen and (max-width: 1050px) {
+      width: 100%;
+    }
+  }
+  
+  .frame-427318922 {
+    margin-right: 6px;
+    gap: var(--space-3xl);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @media only screen and (max-width: 1050px) {
+      margin-right: 0px;
+    }
+  }
+  
+  .reports {
+    margin-bottom: 4px;
+    align-self: flex-end;
+  }
+  

@@ -1,0 +1,195 @@
+/*=========== TABLE OF CONTENTS ===========
+1. Common CSS
+2. Page CSS
+==========================================*/
+
+/*-------------------------------------
+  1. Common CSS
+--------------------------------------*/
+.frame-34987 {
+    gap: var(--space-lg);
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .group-973 {
+    margin-top: 54px;
+    gap: var(--space-6xl);
+    display: flex;
+    align-self: stretch;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .group-889 {
+    color: var(--gray_600_01) !important;
+    padding-left: var(--space-3xl);
+    padding-right: var(--space-3xl);
+    font-size: 20px;
+    font-weight: 600;
+    align-self: stretch;
+    height: 36px;
+    border-bottom: 1px solid var(--gray_400) !important;
+  }
+  
+  /*-------------------------------------
+    2. Page CSS
+  --------------------------------------*/
+  .newscreenbody-1 {
+    margin-bottom: 4px;
+    gap: 56px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @media only screen and (max-width: 550px) {
+      gap: var(--space-11xl);
+    }
+  }
+  
+  .frame-34990-2 {
+    gap: var(--space-lg);
+    display: flex;
+    justify-content: center;
+    @media only screen and (max-width: 1050px) {
+      flex-direction: column;
+    }
+  }
+  
+  .frame-34976 {
+    gap: var(--space-lg);
+    display: flex;
+    width: 16%;
+    justify-content: center;
+    align-items: center;
+    @media only screen and (max-width: 1050px) {
+      width: 100%;
+    }
+  }
+  
+  .group-924 {
+    gap: var(--space-lg);
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .frame-427318907 {
+    padding-left: var(--space-lg);
+    padding-right: var(--space-lg);
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @media only screen and (max-width: 1050px) {
+      align-self: stretch;
+    }
+  }
+  
+  .frame-34989-1 {
+    padding-left: var(--space-6xl);
+    padding-right: var(--space-6xl);
+    gap: var(--space-lg);
+    flex: 1;
+    display: flex;
+    align-items: center;
+  }
+  
+  .frame-34946 {
+    gap: var(--space-3xl);
+    display: flex;
+    align-self: stretch;
+    @media only screen and (max-width: 550px) {
+      flex-direction: column;
+    }
+  }
+  
+  .frame-34897 {
+    flex: 1;
+    display: flex;
+    @media only screen and (max-width: 550px) {
+      align-self: stretch;
+    }
+  }
+  
+  .frame-34898 {
+    color: var(--blue_gray_900_02);
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 500;
+    gap: var(--space-xl);
+    display: flex;
+    background-color: var(--green_50);
+    width: 10%;
+    position: relative;
+    padding: var(--space-3xl) var(--space-9xl);
+    border-radius: var(--radius-md);
+    @media only screen and (max-width: 550px) {
+      width: 100%;
+      padding-left: var(--space-7xl);
+      padding-right: var(--space-7xl);
+    }
+  }
+  
+  .frame-34868 {
+    background-color: var(--white_a700_01);
+    padding: var(--space-13xl) var(--space-12xl);
+    border-radius: var(--radius-md);
+    border: 0.5px solid var(--gray_400);
+    @media only screen and (max-width: 550px) {
+      padding: var(--space-7xl);
+    }
+  }
+  
+  .group-1380 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  
+  .group-883-1 {
+    gap: var(--space-xl);
+    display: flex;
+    align-self: stretch;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .frame-34869-2 {
+    border-color: var(--gray_400);
+    border-style: solid;
+    background-color: var(--white_a700_01);
+    align-self: stretch;
+    width: 100%;
+  }
+  
+  .frame-8-3 {
+    color: var(--blue_gray_900) !important;
+    margin-top: 80px;
+    margin-right: 12px;
+    padding-left: var(--space-9xl);
+    padding-right: var(--space-9xl);
+    font-family: Open Sans;
+    font-size: 18px;
+    gap: var(--space-xl);
+    background-color: var(--gray_100) !important;
+    height: 54px;
+    min-width: 220px;
+    border-radius: 12px !important;
+    @media only screen and (max-width: 1050px) {
+      margin-right: 0px;
+    }
+  
+    @media only screen and (max-width: 550px) {
+      padding-left: var(--space-7xl);
+      padding-right: var(--space-7xl);
+    }
+  }
+  
+  .image-26 {
+    height: 22px;
+    width: 22px;
+    object-fit: contain;
+  }
+  

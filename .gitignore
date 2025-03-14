@@ -1,0 +1,80 @@
+# Laravel-specific files
+vendor
+node_modules
+/storage/*.key
+composer
+sitemap.xml
+/npm-debug.log
+/yarn-error.log
+/bootstrap/compiled.php
+/storage/pail
+/public/storage
+/public/hot
+/.phpunit.cache
+/.phpunit.result.cache
+
+# For Laravel Mix
+/public/css
+/public/js
+/public/mix-manifest.json
+/css
+/js
+mix-manifest.json
+
+
+# ENV Files
+*.env
+*.env.backup
+*.env.production
+*.env.debugging
+*.env.local
+*.env.*.local
+
+Homestead.yaml
+Homestead.json
+/.vagrant
+/auth.json
+
+# Docker-specific files
+docker-compose.override.yml
+docker-compose.yml
+docker-compose.prod.yml
+/.docker
+/.fleet
+/docker
+
+#Text Files
+*.txt
+commands.txt
+robots.txt
+*.htaccess
+
+# IDE-specific files
+/.phpactor.json
+/.idea
+/.vscode
+/.zed
+/.nova
+
+# Laravel Sail-specific files
+/.sail
+/sail
+/tests
+/stubs
+
+# Miscellaneous
+.DS_Store
+Thumbs.db
+*.log
+*.sql
+*.zip
+*.tar.gz
+*.rar
+*.swp
+*.swo
+*.bak
+*.tmp
+*.cache
+*.rnd
+_ide_helper.php
+.editorconfig

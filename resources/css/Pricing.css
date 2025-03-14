@@ -1,0 +1,189 @@
+/*=========== TABLE OF CONTENTS ===========
+1. Common CSS
+2. Page CSS
+==========================================*/
+
+/*-------------------------------------
+  1. Common CSS
+--------------------------------------*/
+.group-1003 {
+    margin-bottom: 110px;
+    width: 38%;
+    display: flex;
+    flex-direction: column;
+    @media only screen and (max-width: 1050px) {
+      width: 100%;
+      margin-bottom: 0px;
+    }
+  }
+  
+  .frame-34869-5 {
+    gap: var(--space-lg);
+    display: flex;
+    background-color: var(--white_a700_01);
+    flex-direction: column;
+    align-items: flex-start;
+    padding: var(--space-10xl) var(--space-13xl);
+    border-radius: var(--radius-md);
+    border: 0.5px solid var(--gray_400);
+    @media only screen and (max-width: 550px) {
+      padding: var(--space-7xl);
+    }
+  }
+  
+  .target-audience {
+    width: 100%;
+    line-height: 24px;
+  }
+  
+  .target-audience--span {
+    color: var(--blue_gray_900_02);
+    font-weight: 500;
+  }
+  
+  .target-audience--span-4 {
+    color: var(--blue_900);
+    font-size: 24px;
+    font-weight: 700;
+  }
+  
+  .group-993 {
+    margin-bottom: 4px;
+    gap: var(--space-xl);
+    display: flex;
+    align-self: stretch;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .features-7 {
+    font-weight: 500 !important;
+  }
+  
+  .frame-8-5 {
+    gap: var(--space-xl);
+    display: flex;
+    background-color: var(--indigo_50);
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    align-self: stretch;
+    padding: var(--space-lg);
+    border-radius: var(--radius-md);
+  }
+  
+  .upload-up-to-3-job {
+    color: var(--blue_gray_900) !important;
+    width: 86%;
+    line-height: 21px;
+  }
+  
+  .frame-9-2 {
+    gap: var(--space-xl);
+    display: flex;
+    background-color: var(--indigo_50);
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    align-self: stretch;
+    padding: var(--space-md);
+    border-radius: var(--radius-md);
+  }
+  
+  .frame-10-1 {
+    gap: var(--space-xl);
+    background-color: var(--gray_100);
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: stretch;
+    padding: var(--space-md);
+    border-radius: var(--radius-md);
+  }
+  
+  .basic-ai-ranking {
+    color: var(--blue_gray_900) !important;
+    align-self: flex-end;
+  }
+  
+  .frame-12 {
+    gap: var(--space-xl);
+    display: flex;
+    background-color: var(--gray_100);
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    align-self: stretch;
+    padding: var(--space-lg);
+    border-radius: var(--radius-md);
+  }
+  
+  .limited-customer {
+    color: var(--blue_gray_900) !important;
+    width: 84%;
+    line-height: 21px;
+  }
+  
+  /*-------------------------------------
+    2. Page CSS
+  --------------------------------------*/
+  .pricing-6 {
+    gap: var(--space-13xl);
+    background-color: var(--white_a700_01);
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+  }
+  
+  .newscreenbody-5 {
+    margin-bottom: 4px;
+    gap: var(--space-11xl);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .group-1257 {
+    gap: var(--space-3xl);
+    display: flex;
+    flex-direction: column;
+    @media only screen and (max-width: 1050px) {
+      padding-left: var(--space-7xl);
+      padding-right: var(--space-7xl);
+    }
+  }
+  
+  .he-plans-are-designed {
+    width: 80%;
+    line-height: 23px;
+    @media only screen and (max-width: 1050px) {
+      width: 100%;
+    }
+  }
+  
+  .group-1256 {
+    gap: var(--space-9xl);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @media only screen and (max-width: 1050px) {
+      padding-left: var(--space-7xl);
+      padding-right: var(--space-7xl);
+    }
+  }
+  
+  .frame-34881-2 {
+    gap: var(--space-9xl);
+    background-color: var(--gray_50);
+    display: flex;
+    align-self: stretch;
+    padding: var(--space-4xl) 56px var(--space-4xl) 292px;
+    border-radius: var(--radius-md);
+    @media only screen and (max-width: 1050px) {
+      flex-direction: column;
+      padding-left: var(--space-7xl);
+      padding-right: var(--space-7xl);
+    }
+  }
+  

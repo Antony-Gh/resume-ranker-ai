@@ -1,0 +1,92 @@
+.frame-34842-5 {
+    background-color: var(--white_a700_01);
+    width: 64%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 54px;
+    border-radius: var(--radius-4xl);
+    border: 1px solid var(--blue_gray_500_51);
+    @media only screen and (max-width: 1050px) {
+      width: 100%;
+      padding: var(--space-7xl);
+    }
+  
+    @media only screen and (max-width: 550px) {
+      flex-direction: column;
+    }
+  }
+  
+  .back-arrow-3 {
+    height: 44px;
+    @media only screen and (max-width: 550px) {
+      width: 100%;
+    }
+  }
+  
+  .frame-34991 {
+    margin-top: 6px;
+    margin-bottom: 6px;
+    padding-left: 56px;
+    padding-right: 56px;
+    gap: var(--space-11xl);
+    align-self: center;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    @media only screen and (max-width: 1050px) {
+      padding-left: var(--space-7xl);
+      padding-right: var(--space-7xl);
+    }
+  
+    @media only screen and (max-width: 550px) {
+      align-self: stretch;
+    }
+  }
+  
+  .group-876 {
+    margin-right: 8px;
+    gap: var(--space-12xl);
+    display: flex;
+    width: 92%;
+    flex-direction: column;
+    align-items: center;
+    @media only screen and (max-width: 1050px) {
+      width: 100%;
+      margin-right: 0px;
+    }
+  }
+  
+  .reset-password {
+    color: var(--blue_gray_900_01) !important;
+    font-family: Open Sans !important;
+  }
+  
+  .vector-3-7 {
+    height: 1px;
+    background-color: var(--blue_gray_900_03);
+    align-self: stretch;
+    width: 100%;
+  }
+  
+  .frame-34845-1 {
+    margin-right: 8px;
+    gap: var(--space-14xl);
+    display: flex;
+    width: 92%;
+    flex-direction: column;
+    @media only screen and (max-width: 1050px) {
+      width: 100%;
+      margin-right: 0px;
+    }
+  }
+  
+  .wrong-delete-re-3 {
+    height: 20px;
+    margin-top: 12px;
+    @media only screen and (max-width: 550px) {
+      width: 100%;
+    }
+  }
+  

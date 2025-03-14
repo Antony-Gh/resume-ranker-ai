@@ -1,0 +1,122 @@
+/*=========== TABLE OF CONTENTS ===========
+1. Common CSS
+2. Page CSS
+==========================================*/
+
+/*-------------------------------------
+  1. Common CSS
+--------------------------------------*/
+.dhi-group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: text;
+    height: 68px;
+    width: 68px;
+    color: var(--white_a700_01);
+    background-color: var(--white_a700_01);
+    text-align: center;
+    border-radius: var(--radius-md);
+    border: 1.27px solid var(--blue_gray_900_02);
+  }
+  
+  /*-------------------------------------
+    2. Page CSS
+  --------------------------------------*/
+  .group-1141 {
+    margin-top: 6px;
+    padding-left: 56px;
+    padding-right: 56px;
+    display: flex;
+    justify-content: center;
+    @media only screen and (max-width: 1050px) {
+      padding-left: var(--space-7xl);
+      padding-right: var(--space-7xl);
+    }
+  }
+  
+  .group-1140 {
+    gap: var(--space-10xl);
+    display: flex;
+    width: 56%;
+    flex-direction: column;
+    @media only screen and (max-width: 1050px) {
+      width: 100%;
+    }
+  }
+  
+  .group-1138 {
+    margin-right: 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--space-7xl);
+    @media only screen and (max-width: 1050px) {
+      margin-right: 0px;
+    }
+  }
+  
+  .wrong-delete-re-2 {
+    height: 20px;
+  }
+  
+  .frame-34860 {
+    margin-left: 120px;
+    margin-right: 120px;
+    gap: var(--space-12xl);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @media only screen and (max-width: 1050px) {
+      margin-left: 0px;
+      margin-right: 0px;
+    }
+  }
+  
+  .vector-3-6 {
+    height: 1px;
+    margin-left: 118px;
+    margin-right: 120px;
+    background-color: var(--blue_gray_900_03);
+    @media only screen and (max-width: 1050px) {
+      margin-left: 0px;
+      margin-right: 0px;
+    }
+  }
+  
+  .group-883 {
+    margin-left: 118px;
+    margin-right: 118px;
+    gap: var(--space-10xl);
+    display: flex;
+    flex-direction: column;
+    @media only screen and (max-width: 1050px) {
+      margin-left: 0px;
+      margin-right: 0px;
+    }
+  }
+  
+  .otp {
+    font-family: Open Sans !important;
+    font-size: 32.17px !important;
+  }
+  
+  .group-865 {
+    gap: var(--space-3xl);
+    display: flex;
+    align-self: stretch;
+    width: auto;
+    padding: var(--space-3xl);
+  }
+  
+  .frame-34863 {
+    margin-right: 16px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: var(--space-7xl);
+    @media only screen and (max-width: 1050px) {
+      margin-right: 0px;
+    }
+  }
+  
