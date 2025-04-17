@@ -1,7 +1,4 @@
-
-
-
-name: Laravel CI/CD (Windows)
+name: Laravel CI/CD (Linux)
 
 on: [push, pull_request]
 
@@ -9,7 +6,6 @@ jobs:
   build:
 
     runs-on: ubuntu-latest
-
 
     services:
       mysql:
@@ -40,24 +36,24 @@ jobs:
         run: composer install --no-interaction --prefer-dist --optimize-autoloader
 
       - name: Set up .env File
-        run: Copy-Item .env.example .env
+        run: cp .env.example .env
 
       - name: Configure Database Connection
         run: |
-          Add-Content .env "`nDB_CONNECTION=mysql"
-          Add-Content .env "`nDB_HOST=127.0.0.1"
-          Add-Content .env "`nDB_PORT=3306"
-          Add-Content .env "`nDB_DATABASE=resume_ranker_ai"
-          Add-Content .env "`nDB_USERNAME=root"
-          Add-Content .env "`nDB_PASSWORD=root"
+          echo "DB_CONNECTION=mysql" >> .env
+          echo "DB_HOST=127.0.0.1" >> .env
+          echo "DB_PORT=3306" >> .env
+          echo "DB_DATABASE=resume_ranker_ai" >> .env
+          echo "DB_USERNAME=root" >> .env
+          echo "DB_PASSWORD=root" >> .env
 
       - name: Generate Application Key
         run: php artisan key:generate
 
       - name: Set Storage Permissions
         run: |
-          icacls storage /grant "Everyone":(OI)(CI)F /T
-          icacls bootstrap/cache /grant "Everyone":(OI)(CI)F /T
+          chmod -R 777 storage
+          chmod -R 777 bootstrap/cache
 
       - name: Run Migrations
         env:
