@@ -4,8 +4,15 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta name="keywords"
     content="Scuba Diving, Diving Education, PADI Go Pro, Dive Tours, Liveaboard Dive Safari, Snorkeling, Desert Safari, Accommodation, Camping Marsa Alam, Hurghada, Sahl Hasheesh, Port Ghaleb, Abu Dabbab, Marsa Alam, Hamata, Red Sea, Egypt, Sea Magic, Sea Magics, Red Sea Diving, Dive Egypt" />
-<link rel="icon" type="image/webp" sizes="32x32" href="{{ asset('images/logo.ico') }}" />
+
+<!-- Icons -->
+<link rel="icon" type="image/png" sizes="32x32" href="{{ asset('images/logo.png') }}" />
+<link rel="icon" type="image/webp" sizes="32x32" href="{{ asset('images/logo.webp') }}" />
+<link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}">
+
+
 <title>@yield('title', 'Resume Ranker AI')</title>
+
 <meta name="theme-color" content="#000000" />
 <meta name="description"
     content="Resume Ranker AI is an intelligent tool that analyzes and ranks resumes based on job descriptions using AI. Upload resumes, get instant insights, and optimize your hiring process effortlessly." />
