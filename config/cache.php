@@ -105,4 +105,33 @@ return [
 
     'prefix' => env('CACHE_PREFIX', Str::slug(env('APP_NAME', 'laravel'), '_').'_cache_'),
 
+    /*
+    |--------------------------------------------------------------------------
+    | Rate Limiting
+    |--------------------------------------------------------------------------
+    |
+    | Here you may configure the rate limiters for your application. These
+    | limits are used to control the rate of requests to your application.
+    |
+    */
+
+    'rate_limiters' => [
+        'api' => [
+            'max_attempts' => 60,
+            'decay_minutes' => 1,
+        ],
+        'login' => [
+            'max_attempts' => 5,
+            'decay_minutes' => 1,
+        ],
+        'password_reset' => [
+            'max_attempts' => 5,
+            'decay_minutes' => 1,
+        ],
+        'verification' => [
+            'max_attempts' => 6,
+            'decay_minutes' => 1,
+        ],
+    ],
+
 ];

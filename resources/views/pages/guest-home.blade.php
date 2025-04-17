@@ -1,12 +1,15 @@
-@extends('layouts.app')
+@extends('layouts.guest')
 
 @section('title', 'Resume Ranker AI - Home')
 
 @push('styles')
     <link rel="stylesheet" href="{{ mix('css/HomeOne1.css') }}">
-    <link rel="stylesheet" href="{{ mix('css/SignIn.css') }}">
-    <link rel="stylesheet" href="{{ mix('css/SignUp.css') }}">
+
+    <link rel="stylesheet" href="{{ mix('css/auth.css') }}">
     <link rel="stylesheet" href="{{ mix('css/SignUpOne.css') }}">
+    <link rel="stylesheet" href="{{ mix('css/ForgetPassword.css') }}">
+    <link rel="stylesheet" href="{{ mix('css/CheckEmail.css') }}">
+    <link rel="stylesheet" href="{{ mix('css/OTPVerification.css') }}">
 @endpush
 
 @section('content')
@@ -31,20 +34,22 @@
                                 efficient hiring decisions.
                             </p>
                             <div class="frame-9">
-                                <button class="frame-8 ui button mb-10-sm indigo_50 size-xl fill round hover-scale">
+                                <button class="frame-8 ui button mb-10-sm indigo_50 size-xl fill round hover-scale"
+                                    aria-controls="sign-in-modal" aria-label="Open modal">
                                     <img src="{{ asset('images/img_lock.svg') }}" alt="Lock" class="lock" />
                                     <span> Rank Your Resume</span>
                                 </button>
-                                <button class="frame-8 ui button ml-10-big size-xl fill round hover-scale" aria-haspopup="true" aria-controls="modal-dialog-sign-in" aria-label="Open Modal">
+                                <button class="frame-8 ui button ml-10-big size-xl fill round hover-scale"
+                                    aria-controls="sign-up-modal" aria-label="Open modal">
                                     <img src="{{ asset('images/img_crown_1.svg') }}" alt="Crown 1" class="crown-1" />
                                     <span> Take a Subscription</span>
                                 </button>
                                 <!-- <img src="{{ asset('images/img_crown_1.svg') }}" alt="Crown 1" class="crown-1" />
-                                        <h3 class="take-a-subscription ui heading size-text2xl">Take a Subscription</h3> -->
+                                                        <h3 class="take-a-subscription ui heading size-text2xl">Take a Subscription</h3> -->
                             </div>
                         </div>
                         <img src="{{ asset('images/img_22635593_6648536.png') }}" alt="22635593 6648536"
-                            class="class-22635593-6648536 slide-in-right" />
+                            class="class-22635593-6648536 slide-in-right hover-scale" />
                     </div>
                 </div>
             </div>
@@ -54,8 +59,33 @@
     @include('modals.sign-in')
 
     @include('modals.sign-up')
+
+    @include('modals.forget-password')
+
+    @include('modals.otp-verification')
+
+    @include('modals.check-email')
+
+    @include('modals.reset-password')
+
+
+
 @endsection
 
 @push('scripts')
-    <script src="{{ mix('js/sign-in-modal.js') }}" defer></script>
+    <script>
+        // Use Blade syntax to inject PHP variables properly
+        const action = "{{ $action ?? '' }}";
+        const showResetModal = {{ $showResetModal ? 'true' : 'false' }};
+        const resetToken = "{{ $resetToken ?? '' }}";
+        const resetEmail = "{{ $resetEmail ?? '' }}";
+    </script>
+    <script src="{{ mix('js/auth.js') }}" defer></script>
+    <script src="{{ mix('js/sign-in-script.js') }}" defer></script>
+    <script src="{{ mix('js/sign-up-script.js') }}" defer></script>
+    <script src="{{ mix('js/otp-verification.js') }}" defer></script>
+    <script src="{{ mix('js/check-action.js') }}" defer></script>
+    <script src="{{ mix('js/forgot-password-script.js') }}" defer></script>
+    <script src="{{ mix('js/reset-password-script.js') }}" defer></script>
+    <script src="{{ mix('js/check-email-script.js') }}" defer></script>
 @endpush

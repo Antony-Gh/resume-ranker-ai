@@ -1,0 +1,610 @@
+/* SignIn.css: */
+
+/* ========== Welcome Text ========== */
+.welcome-back-please {
+  justify-self: center;
+  margin-top: 10px;
+  /* margin-left: 50px; */
+  font-weight: 400 !important;
+  align-self: flex-start;
+  width: 100%;
+  text-align: center;
+  opacity: 0;
+  animation: fadeInUp 0.6s ease-out 0.2s forwards;
+}
+
+.modal-container {
+  background-color: var(--white_a700_01);
+  width: 100%;
+  position: relative;
+  padding: 20px;
+  border-radius: var(--radius-4xl);
+  border: 1px solid var(--blue_gray_500_51);
+  height: 100%;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: fadeInScale 0.6s ease-out;
+
+  @media only screen and (max-width: 1050px) {
+    padding-top: var(--space-7xl);
+    padding-bottom: var(--space-7xl);
+  }
+}
+
+.modal-container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.12);
+}
+
+.modal-group {
+  padding-left: var(--space-7xl);
+  padding-right: var(--space-7xl);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+  @media only screen and (max-width: 1050px) {
+    padding-left: var(--space-5xl);
+    padding-right: var(--space-5xl);
+  }
+}
+
+.social-login-container {
+  margin-top: 10px;
+  margin-left: 46px;
+  margin-right: 46px;
+  gap: var(--space-5xl);
+  display: flex;
+  align-self: stretch;
+  flex-direction: column;
+
+  @media only screen and (max-width: 1050px) {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}
+
+.or-group {
+  gap: var(--space-9xl);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+
+  @media only screen and (max-width: 550px) {
+    flex-direction: row;
+  }
+}
+
+.or-divider {
+  height: 1px;
+  background-color: var(--blue_gray_500);
+  flex: 1 0 1px;
+
+  @media only screen and (max-width: 550px) {
+    align-self: center;
+  }
+}
+
+
+.social-login-group {
+  margin-left: 42px;
+  margin-right: 42px;
+  gap: var(--space-9xl);
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  align-items: center;
+
+
+  @media only screen and (max-width: 1050px) {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  @media only screen and (max-width: 768px) {
+    margin-left: 0px;
+    margin-right: 0px;
+    flex-direction: column;
+  }
+}
+
+.social-login-button {
+  color: var(--blue_gray_900_02) !important;
+  padding-left: var(--space-2xl);
+  padding-right: var(--space-2xl);
+  letter-spacing: -0.25px;
+  font-size: 18px;
+  gap: var(--space-lg);
+  background-color: var(--white_a700_01) !important;
+  height: 54px;
+  min-width: 120px;
+  border-radius: 10px !important;
+  border: 1px solid var(--blue_gray_500);
+}
+
+
+.social-login-button:hover {
+  background-color: var(--blue_700);
+}
+
+
+/* ========== Form Groups ========== */
+.sign-in-form {
+  margin-top: 20px;
+  margin-bottom: 6px;
+  gap: var(--space-3xl);
+  display: flex;
+  width: 75%;
+  flex-direction: column;
+  align-items: center;
+  opacity: 0;
+  animation: fadeInUp 0.6s ease-out 0.6s forwards;
+}
+
+.sign-in-group {
+  gap: var(--space-8xl);
+  display: flex;
+  align-self: stretch;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ========== Form Inputs ========== */
+
+.input-field {
+  color: var(--blue_gray_500) !important;
+  padding-left: var(--space-5xl);
+  padding-right: var(--space-5xl);
+  letter-spacing: -0.25px;
+  font-size: 18px;
+  gap: var(--space-5xl);
+  border-color: var(--blue_gray_500);
+  border-width: 1px;
+  background-color: var(--white_a700_01) !important;
+  align-self: stretch;
+  height: 54px;
+  border-radius: 10px !important;
+  transition: border-color 0.2s ease-in-out;
+}
+
+.input-field.error-state {
+  border-color: var(--red_300) !important;
+}
+
+.input-field input.error-state {
+  animation: shake 0.5s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+}
+
+.forget-password-group {
+  gap: var(--space-4xl);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  flex-wrap: nowrap;
+  width: 100%;
+}
+
+/* ========== Links & Text ========== */
+.forgot-password--link {
+  margin-right: 18px;
+  transition: color 0.2s ease-in-out;
+}
+
+.or {
+  color: var(--blue_gray_500) !important;
+  font-family: Inter !important;
+  font-weight: 400 !important;
+}
+
+.don-t-have-an-account {
+  color: var(--blue_gray_500) !important;
+  /* margin-left: 104px; */
+  font-weight: 400 !important;
+  align-self: flex-start;
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ========== Modal Styles ========== */
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+  display: none;
+  opacity: 0;
+  animation: fadeIn 0.3s ease-in-out forwards;
+}
+
+.modal-dialog {
+  overflow-y: auto;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+  background-color: white;
+  border-radius: 12px;
+  padding: 20px;
+  width: 90%;
+  max-width: 600px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: none;
+  opacity: 0;
+  animation: slideIn 0.3s ease-in-out forwards;
+  max-height: 650px;
+  border-width: 0px;
+  margin: 0px;
+  transition: opacity 300ms;
+  scrollbar-width: none;
+  /* Firefox */
+  -ms-overflow-style: none;
+  /* IE and Edge */
+}
+
+.modal-dialog::-webkit-scrollbar {
+  display: none;
+  /* Chrome, Safari and Opera */
+}
+
+.close-button {
+  position: absolute;
+  top: 45px;
+  left: 45px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  z-index: 1000;
+}
+
+.close-icon {
+  width: 24px;
+  height: 24px;
+  transition: transform 0.2s ease-in-out;
+}
+
+
+/* ========== Hover Effects ========== */
+.input-field:hover {
+  border-color: var(--blue_900);
+}
+
+.forgot-password--link:hover,
+.don-t-have-an-account--span-1:hover {
+  color: var(--blue_900);
+}
+
+.close-button:hover .close-icon {
+  transform: scale(1.2);
+}
+
+.loading-dialog {
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  max-width: 300px;
+  text-align: center;
+}
+
+.loading-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 2rem;
+}
+
+.loading-spinner {
+  color: var(--blue_700);
+}
+
+.loading-message {
+  color: #fff;
+  margin: 0;
+}
+
+/* ========== Media Queries ========== */
+@media only screen and (max-width: 1050px) {
+
+  .welcome-back-please,
+  .don-t-have-an-account {
+    margin-left: 0;
+  }
+
+  .sign-in-form {
+    width: 100%;
+  }
+
+  .modal-dialog {
+    width: 95%;
+    padding: 15px;
+  }
+
+}
+
+@media only screen and (max-width: 768px) {
+
+  .input-field {
+    padding-left: var(--space-3xl);
+    padding-right: var(--space-3xl);
+  }
+
+  .close-button {
+    top: 35px;
+    left: 35px;
+  }
+}
+
+/* ========== Dark Mode Support ========== */
+/* @media (prefers-color-scheme: dark) {
+  .modal-dialog {
+    background-color: var(--blue_gray_900_02);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  }
+} */
+
+/* ========== Reduced Motion Support ========== */
+@media (prefers-reduced-motion: reduce) {
+
+  .welcome-back-please,
+  .sign-in-form,
+  .modal-backdrop,
+  .modal-dialog {
+    animation: none;
+    opacity: 1;
+  }
+}
+
+/* ========== Utility Classes ========== */
+.opacity-25 {
+  opacity: 0.25;
+}
+
+.opacity-75 {
+  opacity: 0.75;
+}
+
+.h-5 {
+  height: 1.25rem;
+}
+
+.w-5 {
+  width: 1.25rem;
+}
+
+.text-white {
+  color: white;
+}
+
+/* ========== Spinner Animation ========== */
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin {
+  animation: spin 1s linear infinite;
+}
+
+.button-spinner {
+  display: none;
+  /* margin-left: 8px; */
+}
+
+.button-spinner-check {
+  color: var(--blue_700);
+  width: 40px;
+  display: none;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  height: 0;
+}
+
+@keyframes shake {
+
+  10%,
+  90% {
+    transform: translateX(-1px);
+  }
+
+  20%,
+  80% {
+    transform: translateX(2px);
+  }
+
+  30%,
+  50%,
+  70% {
+    transform: translateX(-4px);
+  }
+
+  40%,
+  60% {
+    transform: translateX(4px);
+  }
+}
+
+/* ========== Password Toggle ========== */
+.toggle-password {
+  position: absolute;
+  right: var(--space-5xl);
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.toggle-password:hover {
+  opacity: 0.8;
+}
+
+.toggle-password img {
+  width: 24px;
+  height: 24px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.toggle-password:hover img {
+  transform: scale(1.1);
+}
+
+@media only screen and (max-width: 768px) {
+  .toggle-password {
+    right: var(--space-3xl);
+  }
+}
+
+/* SignUp.css: */
+
+
+/* ========== Welcome Text ========== */
+.welcome-enter-email {
+  margin-top: 10px;
+  font-weight: 400 !important;
+  width: 100%;
+  text-align: center;
+  opacity: 0;
+  animation: fadeInUp 0.6s ease-out 0.2s forwards;
+}
+
+/* ========== Divider ========== */
+.divider {
+  height: 1px;
+  margin-top: 15px;
+  background-color: var(--blue_gray_900_03);
+  width: 66%;
+  position: relative;
+  overflow: hidden;
+  opacity: 0;
+  animation: fadeInLeft 0.6s ease-out 0.4s forwards;
+}
+
+.divider::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg,
+      transparent,
+      var(--blue_900),
+      transparent);
+  animation: shimmer 2s infinite;
+}
+
+/* ========== Form Container ========== */
+
+.input-container {
+  gap: var(--space-2xl);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.submit-button {
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  color: var(--white_a700_01) !important;
+  padding-left: var(--space-14xl);
+  padding-right: var(--space-14xl);
+  font-size: 16px;
+  font-weight: 600;
+  background-color: var(--blue_700);
+  /* align-self: stretch; */
+  height: 52px;
+  border-radius: 26px !important;
+
+  @media only screen and (max-width: 550px) {
+    padding-left: var(--space-7xl);
+    padding-right: var(--space-7xl);
+  }
+}
+
+.submit-button:hover {
+  background-color: var(--blue_900);
+  border-color: var(--blue_900_30);
+}
+
+/* ========== Hover Effects ========== */
+.input-container:hover {
+  border-color: var(--blue_900);
+}
+
+/* ========== Media Queries ========== */
+@media only screen and (max-width: 1050px) {
+
+  .welcome-enter-email {
+    margin-left: 0px;
+  }
+
+}
+
+@media only screen and (max-width: 768px) {
+
+  .divider {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+
+  .divider {
+    width: 90%;
+  }
+}
+
+/* ========== Dark Mode Support ========== */
+/* 
+ */
+
+/* ========== Reduced Motion Support ========== */
+@media (prefers-reduced-motion: reduce) {
+
+  .welcome-enter-email,
+  .divider {
+    animation: none;
+    opacity: 1;
+  }
+}

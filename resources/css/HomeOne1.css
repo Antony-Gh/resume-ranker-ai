@@ -29,6 +29,7 @@
   gap: var(--space-15xl);
   display: flex;
   align-items: center;
+  padding: 15px 0;
 }
 
 .group-1128 {

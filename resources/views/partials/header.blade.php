@@ -23,9 +23,9 @@
 
         <!-- Buttons -->
         <div class="frame-5">
-            <button class="frame-3 ui button blue_900 size-2xl fill round hover-scale"  aria-haspopup="true" aria-controls="modal-dialog-sign-in" aria-label="Open Modal">Sign In</button>
+            <button class="frame-3 ui button blue_900 size-2xl fill round hover-scale"  aria-haspopup="true" aria-controls="sign-in-modal" aria-label="Open Modal">Sign In</button>
             <div class="line-1"></div>
-            <button class="frame-4 ui button blue_gray_900_02 size-2xl outline round hover-scale"  aria-haspopup="true" aria-controls="modal-dialog-sign-up" aria-label="Open Modal">Get Started for Free</button>
+            <button class="frame-4 ui button blue_gray_900_02 size-2xl outline round hover-scale"  aria-haspopup="true" aria-controls="sign-up-modal" aria-label="Open Modal">Get Started for Free</button>
         </div>
     </div>
 </header>

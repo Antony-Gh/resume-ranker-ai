@@ -15,7 +15,8 @@ const cssFiles = [
     'resources/css/CandidateInsights.css',
     'resources/css/PaymentMethod.css',
     'resources/css/SummaryAndRecomendation.css',
-    'resources/css/Popup.css',
+    // 'resources/css/Popup.css',
+    'resources/css/CheckEmail.css',
     'resources/css/UploadJobDescription.css',
     'resources/css/Cover.css',
     'resources/css/Pricing.css',
@@ -24,20 +25,30 @@ const cssFiles = [
     'resources/css/ResumeRankings.css',
     'resources/css/app.css',
     'resources/css/ForgetPassword.css',
-    'resources/css/SignIn.css',
-    'resources/css/SignUp.css',
+    // 'resources/css/SignIn.css',
+    // 'resources/css/SignUp.css',
     'resources/css/HomeOne.css',
     'resources/css/HomeOne1.css',
     'resources/css/SignUpOne.css',
     'resources/css/Header.css',
     'resources/css/Footer.css',
+    'resources/css/auth.css',
 ];
 
 // Define JS files to compile (if any)
 const jsFiles = [
     'resources/js/app.js',
     'resources/js/bootstrap.js',
-    'resources/js/sign-in-modal.js',
+    // 'resources/js/sign-in-modal.js',
+    'resources/js/auth.js',
+    'resources/js/otp-verification.js',
+    'resources/js/sign-in-script.js',
+    'resources/js/sign-up-script.js',
+    'resources/js/check-action.js',
+    'resources/js/main-home.js',
+    'resources/js/forgot-password-script.js',
+    'resources/js/reset-password-script.js',
+    'resources/js/check-email-script.js',
 ];
 
 // Compile CSS files

@@ -6,117 +6,222 @@
 /*-------------------------------------
   1. Common CSS
 --------------------------------------*/
-.dhi-group {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: text;
-    height: 68px;
-    width: 68px;
-    color: var(--white_a700_01);
-    background-color: var(--white_a700_01);
-    text-align: center;
-    border-radius: var(--radius-md);
-    border: 1.27px solid var(--blue_gray_900_02);
+.otp-input {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: text;
+  height: 60px;
+  /* Slightly reduced for better mobile usability */
+  width: 60px;
+  font-size: 1.25rem;
+  /* Ensures text is clearly visible */
+  font-weight: bold;
+  color: var(--blue_gray_900_02);
+  /* More contrast for readability */
+  background-color: var(--white_a700_01);
+  text-align: center;
+  border-radius: var(--radius-md);
+  border: 1.5px solid var(--blue_gray_900_02);
+  transition: all 0.3s ease-in-out;
+  /* Smooth transitions for focus/hover effects */
+  outline: none;
+  /* Remove default outline */
+}
+
+/* Enhance focus effect for accessibility */
+.otp-input:focus {
+  border-color: var(--blue_900);
+  /* Highlighted border color */
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.4);
+  /* Subtle glow effect */
+}
+
+/* Improve hover effect */
+.otp-input:hover {
+  border-color: var(--blue_900);
+}
+
+/* Make it responsive for smaller screens */
+@media (max-width: 480px) {
+  .otp-input {
+    height: 50px;
+    width: 50px;
+    font-size: 1rem;
+    /* Adjust for smaller screens */
   }
-  
-  /*-------------------------------------
+}
+
+
+/*-------------------------------------
     2. Page CSS
   --------------------------------------*/
-  .group-1141 {
-    margin-top: 6px;
-    padding-left: 56px;
-    padding-right: 56px;
-    display: flex;
-    justify-content: center;
-    @media only screen and (max-width: 1050px) {
-      padding-left: var(--space-7xl);
-      padding-right: var(--space-7xl);
-    }
+/*
+.group-1141 {
+  margin-top: 6px;
+  padding-left: 56px;
+  padding-right: 56px;
+  display: flex;
+  justify-content: center;
+
+  @media only screen and (max-width: 1050px) {
+    padding-left: var(--space-7xl);
+    padding-right: var(--space-7xl);
   }
-  
-  .group-1140 {
-    gap: var(--space-10xl);
-    display: flex;
-    width: 56%;
-    flex-direction: column;
-    @media only screen and (max-width: 1050px) {
-      width: 100%;
-    }
+}
+  */
+
+.group-1140 {
+  gap: var(--space-10xl);
+  display: flex;
+  width: 56%;
+  flex-direction: column;
+
+  @media only screen and (max-width: 1050px) {
+    width: 100%;
   }
-  
-  .group-1138 {
-    margin-right: 18px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: var(--space-7xl);
-    @media only screen and (max-width: 1050px) {
-      margin-right: 0px;
-    }
+}
+
+.group-1138 {
+  margin-right: 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--space-7xl);
+
+  @media only screen and (max-width: 1050px) {
+    margin-right: 0px;
   }
-  
-  .wrong-delete-re-2 {
-    height: 20px;
+}
+
+.wrong-delete-re-2 {
+  height: 20px;
+}
+
+.frame-34860 {
+  margin-left: 120px;
+  margin-right: 120px;
+  gap: var(--space-12xl);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media only screen and (max-width: 1050px) {
+    margin-left: 0px;
+    margin-right: 0px;
   }
-  
-  .frame-34860 {
-    margin-left: 120px;
-    margin-right: 120px;
-    gap: var(--space-12xl);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    @media only screen and (max-width: 1050px) {
-      margin-left: 0px;
-      margin-right: 0px;
-    }
+}
+
+.vector-3-6 {
+  height: 1px;
+  margin-left: 118px;
+  margin-right: 120px;
+  background-color: var(--blue_gray_900_03);
+
+  @media only screen and (max-width: 1050px) {
+    margin-left: 0px;
+    margin-right: 0px;
   }
-  
-  .vector-3-6 {
-    height: 1px;
-    margin-left: 118px;
-    margin-right: 120px;
-    background-color: var(--blue_gray_900_03);
-    @media only screen and (max-width: 1050px) {
-      margin-left: 0px;
-      margin-right: 0px;
-    }
+}
+
+.group-883 {
+  margin-left: 118px;
+  margin-right: 118px;
+  gap: var(--space-10xl);
+  display: flex;
+  flex-direction: column;
+
+  @media only screen and (max-width: 1050px) {
+    margin-left: 0px;
+    margin-right: 0px;
   }
-  
-  .group-883 {
-    margin-left: 118px;
-    margin-right: 118px;
-    gap: var(--space-10xl);
-    display: flex;
-    flex-direction: column;
-    @media only screen and (max-width: 1050px) {
-      margin-left: 0px;
-      margin-right: 0px;
-    }
-  }
-  
-  .otp {
-    font-family: Open Sans !important;
-    font-size: 32.17px !important;
-  }
-  
-  .group-865 {
-    gap: var(--space-3xl);
-    display: flex;
-    align-self: stretch;
-    width: auto;
-    padding: var(--space-3xl);
-  }
-  
-  .frame-34863 {
-    margin-right: 16px;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: var(--space-7xl);
-    @media only screen and (max-width: 1050px) {
-      margin-right: 0px;
-    }
-  }
-  
+}
+
+.otp {
+  font-family: Open Sans !important;
+  font-size: 32.17px !important;
+}
+
+.otp-input-group {
+  gap: var(--space-3xl);
+  display: flex;
+  align-self: stretch;
+  width: auto;
+  padding: var(--space-3xl);
+}
+
+.resend-code-group {
+  display: flex;
+  align-items: center;
+  gap: var(--resend-code-gap);
+}
+
+.resend-code-group.is-disabled {
+  cursor: default;
+  pointer-events: none;
+}
+
+.resend-code-group.is-active {
+  cursor: pointer;
+  pointer-events: auto;
+}
+
+.resend-code-group.is-loading {
+  position: relative;
+  pointer-events: none;
+  /* Prevent clicks during loading */
+  opacity: 0.6;
+}
+
+/* Add a spinner inside the loading element */
+.resend-code-group.is-loading::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 20px;
+  height: 20px;
+  border: 2px solid rgba(255, 255, 255, 0.6);
+  border-top-color: var(--blue_700);
+  /* Primary color */
+  border-radius: 50%;
+  animation: spin2 0.6s linear infinite;
+  transform: translate(-50%, -50%);
+}
+
+.resend-code,
+.timer {
+  color: var(--blue_gray_900_02);
+}
+
+.resend-code {
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+}
+
+.timer {
+  font-family: ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo, Consolas, 'DejaVu Sans Mono', monospace;
+}
+
+.resend-code-group.is-active .timer {
+  color: var(--blue_400);
+  transition: transform 0.3s ease;
+  cursor: pointer !important;
+}
+
+.resend-code-group.is-disabled .timer {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.resend-code-group.is-loading .timer {
+  display: none;
+}
+
+/* .resend-code-group.is-loading .resend-code {
+  display: none;
+} */
+
+.timer:hover {
+  transform: scale(1.05);
+  color: var(--blue_700);
+}

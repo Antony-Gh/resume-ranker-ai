@@ -11,12 +11,28 @@ class DashboardController extends Controller
 {
     public function index()
     {
-        return view('dashboard');
+        return view('pages.main-home');
     }
 
-    public function home()
+    public function myHome()
     {
-        return view('pages.guest-home');
+        return redirect()->route('realHome');
+    }
+
+    public function realHome()
+    {
+        return view('pages.guest-home', [
+            'showResetModal' => session('show_password_reset', false),
+            'resetToken' => session('reset_token', ''), // Provide default empty string
+            'resetEmail' => session('reset_email', ''), // Provide default empty string
+            'action' => session('action', 'regular'),
+        ]);
+    }
+
+
+    public function mainHome()
+    {
+        return view('pages.main-home');
     }
 
     public function pricing()
