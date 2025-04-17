@@ -21,7 +21,8 @@ class AuthNotificationService implements AuthNotificationInterface
     private function sendEmail(string $email, $mailable, string $logMessage): void
     {
         try {
-            Mail::to($email)->queue($mailable);
+            //Mail::to($email)->queue($mailable);
+            Mail::to($email)->send($mailable);
             Log::info("{$logMessage} queued for {$email}");
         } catch (Exception $e) {
             Log::error("Failed to queue {$logMessage} for {$email}: " . $e->getMessage());
