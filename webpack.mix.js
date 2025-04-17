@@ -1,7 +1,6 @@
 const mix = require('laravel-mix');
-const path = require('path'); // <-- ADD THIS
-const fs = require('fs');     // <-- ADD THIS
-
+const path = require('path');
+const fs = require('fs');
 mix.options({
     // Prevent duplicate asset copying
     copyUnmodified: false
@@ -94,19 +93,23 @@ if (mix.inProduction()) {
 
     // Minify all CSS files in the public/css directory
     const cssOutputDir = path.resolve(__dirname, 'public/css');
-    fs.readdirSync(cssOutputDir).forEach((file) => {
-        if (file.endsWith('.css')) {
-            mix.minify(path.join(cssOutputDir, file));
-        }
-    });
+    if (fs.existsSync(cssOutputDir)) {
+        fs.readdirSync(cssOutputDir).forEach((file) => {
+            if (file.endsWith('.css')) {
+                mix.minify(path.join(cssOutputDir, file));
+            }
+        });
+    }
 
     // Minify all JS files in the public/js directory
     const jsOutputDir = path.resolve(__dirname, 'public/js');
-    fs.readdirSync(jsOutputDir).forEach((file) => {
-        if (file.endsWith('.js')) {
-            mix.minify(path.join(jsOutputDir, file));
-        }
-    });
+    if (fs.existsSync(jsOutputDir)) {
+        fs.readdirSync(jsOutputDir).forEach((file) => {
+            if (file.endsWith('.js')) {
+                mix.minify(path.join(jsOutputDir, file));
+            }
+        });
+    }
 } else {
     mix.sourceMaps();
 }
