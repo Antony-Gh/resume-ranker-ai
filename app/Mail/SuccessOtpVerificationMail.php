@@ -7,8 +7,7 @@ use Illuminate\Mail\Mailable;
 use Illuminate\Queue\SerializesModels;
 use Illuminate\Contracts\Queue\ShouldQueue;
 
-class SuccessOtpVerificationMail extends Mailable implements ShouldQueue
-
+class SuccessOtpVerificationMail extends Mailable
 {
     use Queueable, SerializesModels;
 
