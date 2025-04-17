@@ -6,6 +6,8 @@ mix.options({
     copyUnmodified: false
 });
 
+mix.setPublicPath('');
+
 // Define CSS files to compile
 const cssFiles = [
     'resources/css/AdminDashboard.css',
@@ -54,16 +56,16 @@ const jsFiles = [
 
 // Compile CSS files
 cssFiles.forEach((file) => {
-    mix.css(file, 'public/css');
+    mix.css(file, 'css');
 });
 
 // Compile JS files
 jsFiles.forEach((file) => {
-    mix.js(file, 'public/js');
+    mix.js(file, 'js');
 });
 
-mix.copy('resources/fonts', 'public/fonts', false) // false prevents recursive copying
-mix.copy('resources/images', 'public/images', false) // false prevents recursive copying
+mix.copy('resources/fonts', 'fonts', false) // false prevents recursive copying
+mix.copy('resources/images', 'images', false) // false prevents recursive copying
 
 // Configure Webpack to handle images and fonts
 // mix.webpackConfig({
@@ -92,7 +94,7 @@ if (mix.inProduction()) {
     mix.version();
 
     // Minify all CSS files in the public/css directory
-    const cssOutputDir = path.resolve(__dirname, 'public/css');
+    const cssOutputDir = path.resolve(__dirname, 'css');
     if (fs.existsSync(cssOutputDir)) {
         fs.readdirSync(cssOutputDir).forEach((file) => {
             if (file.endsWith('.css')) {
@@ -102,7 +104,7 @@ if (mix.inProduction()) {
     }
 
     // Minify all JS files in the public/js directory
-    const jsOutputDir = path.resolve(__dirname, 'public/js');
+    const jsOutputDir = path.resolve(__dirname, 'js');
     if (fs.existsSync(jsOutputDir)) {
         fs.readdirSync(jsOutputDir).forEach((file) => {
             if (file.endsWith('.js')) {

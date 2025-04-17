@@ -20,6 +20,8 @@ node_modules/
 /public/mix-manifest.json
 /css/
 /js/
+/fonts/
+/images/
 mix-manifest.json
 
 # Logs & debug
