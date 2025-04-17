@@ -1,4 +1,6 @@
 const mix = require('laravel-mix');
+const path = require('path'); // <-- ADD THIS
+const fs = require('fs');     // <-- ADD THIS
 
 mix.options({
     // Prevent duplicate asset copying
