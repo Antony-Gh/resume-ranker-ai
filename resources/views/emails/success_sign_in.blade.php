@@ -28,4 +28,4 @@
 
 @section('footer')
     @include('emails.components.footer')
-    @endsectio
+@endsection
