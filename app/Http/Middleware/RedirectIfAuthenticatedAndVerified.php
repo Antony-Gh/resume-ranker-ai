@@ -17,7 +17,8 @@ class RedirectIfAuthenticatedAndVerified
     {
         $user = Auth::user();
 
-        Log::info("User: " + json_encode($user));
+        // Use dot (.) for string concatenation
+        Log::info("User: " . json_encode($user));
 
         if ($user && $user->hasVerifiedEmail()) {
             return redirect()->route('dashboard');
