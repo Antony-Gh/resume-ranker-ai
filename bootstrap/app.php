@@ -30,6 +30,7 @@ return Application::configure(basePath: dirname(__DIR__))
             'signed' => \App\Http\Middleware\ValidateSignature::class,
             'throttle' => \Illuminate\Routing\Middleware\ThrottleRequests::class,
             'verified' => \App\Http\Middleware\RedirectIfEmailNotVerified::class,
+            'auth.verified.redirect' => \App\Http\Middleware\RedirectIfAuthenticatedAndVerified::class,
             // 'verified-' => \Illuminate\Auth\Middleware\EnsureEmailIsVerified::class,
         ]);
 
@@ -74,22 +75,22 @@ return Application::configure(basePath: dirname(__DIR__))
 
              // Add queued cookies to the response
              \Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse::class,
- 
+
              // Start the session
              \Illuminate\Session\Middleware\StartSession::class,
- 
+
              // Authenticate the session
              \Illuminate\Session\Middleware\AuthenticateSession::class,
- 
+
              // Share errors from the session to the view
              \Illuminate\View\Middleware\ShareErrorsFromSession::class,
- 
+
              // Verify CSRF token to protect against cross-site request forgery
              \App\Http\Middleware\VerifyCsrfToken::class,
- 
+
              // Substitute route parameters
              \Illuminate\Routing\Middleware\SubstituteBindings::class,
- 
+
              // Redirect authenticated users to a specific route (optional)
             //  \App\Http\Middleware\RedirectIfAuthenticated::class,
 

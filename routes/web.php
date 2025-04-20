@@ -8,7 +8,7 @@ use Illuminate\Support\Facades\Route;
 
 /**
  * Web Routes
- * 
+ *
  * This file contains all web routes for the application.
  * Routes are organized by authentication status and functionality.
  */
@@ -20,8 +20,10 @@ use Illuminate\Support\Facades\Route;
  */
 Route::middleware(['web'])->group(function () {
     // Landing Pages
-    Route::get('/', [DashboardController::class, 'myHome'])->name('myHome');
-    Route::get('/home', [DashboardController::class, 'realHome'])->name('realHome');
+    Route::middleware(['auth.verified.redirect'])->group(function () {
+        Route::get('/', [DashboardController::class, 'myHome'])->name('myHome');
+        Route::get('/home', [DashboardController::class, 'realHome'])->name('realHome');
+    });
     Route::get('/pricing', [DashboardController::class, 'pricing'])->name('pricing');
     Route::get('/resume-rankings', [DashboardController::class, 'resumeRankings'])->name('resumeRankings');
 });
@@ -36,12 +38,12 @@ Route::middleware(['auth', 'verified', 'throttle:60,1'])->group(function () {
     // Dashboard & Main Application
     Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
     Route::get('/main', [DashboardController::class, 'mainHome'])->name('signedHome');
-    
+
     // Profile Management
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
-    
+
     // Subscription Management
     Route::get('/subscription-management', [DashboardController::class, 'subscriptionManagement'])
         ->name('subscriptionManagement');

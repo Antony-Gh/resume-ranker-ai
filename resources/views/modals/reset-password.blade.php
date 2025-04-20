@@ -31,7 +31,7 @@
                         <label for="password-reset" class="ui heading size-textxl">New Password</label>
                         <div class="input-field ui input white_a700_01 size-lg fill round">
                             <input id="password-reset" name="password" type="password"
-                                placeholder="Enter new password" required aria-required="true" />
+                                placeholder="Enter new password" required aria-required="true" autocomplete="new-password" />
                             <button id="toggle-password-reset" type="button" class="toggle-password"
                                 aria-label="Toggle password visibility" aria-controls="password-reset"
                                 aria-pressed="false">
@@ -46,7 +46,7 @@
                         <label for="password_confirmation-reset" class="ui heading size-textxl">Confirm Password</label>
                         <div class="input-field ui input white_a700_01 size-lg fill round">
                             <input id="password_confirmation-reset" name="password_confirmation" type="password"
-                                placeholder="Confirm new password" required aria-required="true" />
+                                placeholder="Confirm new password" required aria-required="true" autocomplete="new-password" />
                             <button id="toggle-password_confirmation-reset" type="button" class="toggle-password"
                                 aria-label="Toggle password visibility" aria-controls="password_confirmation-reset"
                                 aria-pressed="false">
