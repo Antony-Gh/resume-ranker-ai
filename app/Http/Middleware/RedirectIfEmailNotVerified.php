@@ -10,7 +10,7 @@ class RedirectIfEmailNotVerified
 {
     public function handle($request, Closure $next)
     {
-        Log::warning("RedirectIfEmailNotVerified");
+        // Log::warning("RedirectIfEmailNotVerified");
         if (Auth::check() && !Auth::user()->hasVerifiedEmail()) {
             session(['action' => 'verify']);
             return redirect()->route('realHome')->with([
@@ -20,4 +20,4 @@ class RedirectIfEmailNotVerified
 
         return $next($request);
     }
-} 
+}
