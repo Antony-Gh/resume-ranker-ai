@@ -6,11 +6,17 @@ use Illuminate\Foundation\Support\Providers\AuthServiceProvider as ServiceProvid
 use Illuminate\Auth\Notifications\VerifyEmail;
 use Illuminate\Auth\Notifications\ResetPassword;
 
+use App\Models\SaverCategory;
+use App\Policies\SaverCategoryPolicy;
+use App\Models\User;
+use App\Policies\UserPolicy;
+
 
 class AuthServiceProvider extends ServiceProvider
 {
     protected $policies = [
-        'App\Models\User' => 'App\Policies\UserPolicy',
+        User::class => UserPolicy::class,
+        SaverCategory::class => SaverCategoryPolicy::class,
     ];
 
     public function boot()
