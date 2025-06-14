@@ -48,7 +48,9 @@ Route::middleware(['auth', 'verified', 'throttle:60,1'])->group(function () {
     Route::get('/subscription-management', [DashboardController::class, 'subscriptionManagement'])
         ->name('subscriptionManagement');
     Route::get('/subscriptions', [SubscriptionController::class, 'index'])->name('subscriptions');
-    Route::post('/subscribe', [SubscriptionController::class, 'subscribe'])->name('subscribe');
+    Route::post('/subscribe', [SubscriptionController::class, 'subscribe'])->name('subscribe'); // To be implemented as store/subscribe
+    Route::put('/subscription/change', [SubscriptionController::class, 'update'])->name('subscription.update'); // For changing plan
+    Route::delete('/subscription/cancel', [SubscriptionController::class, 'destroy'])->name('subscription.destroy'); // For canceling
 });
 
 // routes/web.php or routes/api.php

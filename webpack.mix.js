@@ -6,7 +6,7 @@ mix.options({
     copyUnmodified: false
 });
 
-mix.setPublicPath('');
+mix.setPublicPath('public');
 
 // Define CSS files to compile
 const cssFiles = [
@@ -56,16 +56,20 @@ const jsFiles = [
 
 // Compile CSS files
 cssFiles.forEach((file) => {
-    mix.css(file, 'css');
+    // Output to public/css, maintaining original filename
+    const fileName = path.basename(file);
+    mix.css(file, path.join('public/css', fileName));
 });
 
 // Compile JS files
 jsFiles.forEach((file) => {
-    mix.js(file, 'js');
+    // Output to public/js, maintaining original filename
+    const fileName = path.basename(file);
+    mix.js(file, path.join('public/js', fileName));
 });
 
-mix.copy('resources/fonts', 'fonts', false) // false prevents recursive copying
-mix.copy('resources/images', 'images', false) // false prevents recursive copying
+mix.copy('resources/fonts', 'public/fonts', false)
+mix.copy('resources/images', 'public/images', false)
 
 // Configure Webpack to handle images and fonts
 // mix.webpackConfig({
@@ -91,27 +95,7 @@ mix.copy('resources/images', 'images', false) // false prevents recursive copyin
 
 // Enable versioning in production
 if (mix.inProduction()) {
-    mix.version();
-
-    // Minify all CSS files in the public/css directory
-    const cssOutputDir = path.resolve(__dirname, 'css');
-    if (fs.existsSync(cssOutputDir)) {
-        fs.readdirSync(cssOutputDir).forEach((file) => {
-            if (file.endsWith('.css')) {
-                mix.minify(path.join(cssOutputDir, file));
-            }
-        });
-    }
-
-    // Minify all JS files in the public/js directory
-    const jsOutputDir = path.resolve(__dirname, 'js');
-    if (fs.existsSync(jsOutputDir)) {
-        fs.readdirSync(jsOutputDir).forEach((file) => {
-            if (file.endsWith('.js')) {
-                mix.minify(path.join(jsOutputDir, file));
-            }
-        });
-    }
+    mix.version(); // Laravel Mix handles minification automatically in production.
 } else {
     mix.sourceMaps();
 }

@@ -7,6 +7,12 @@ use App\Http\Requests\StoreCategoryRequest;
 use App\Http\Requests\UpdateCategoryRequest;
 use Illuminate\Http\JsonResponse;
 
+/**
+ * @OA\Tag(
+ *     name="Categories",
+ *     description="API Endpoints for Managing Saver Categories"
+ * )
+ */
 class SaverCategoryController extends Controller
 {
     public function __construct()
@@ -15,7 +21,18 @@ class SaverCategoryController extends Controller
     }
 
     /**
-     * Display a listing of the resource.
+     * @OA\Get(
+     *     path="/api/categories",
+     *     summary="List user's categories",
+     *     tags={"Categories"},
+     *     security={{"sanctum":{}}},
+     *     @OA\Response(
+     *         response=200,
+     *         description="A list of the authenticated user's categories.",
+     *         @OA\JsonContent(type="array", @OA\Items(ref="#/components/schemas/SaverCategory"))
+     *     ),
+     *     @OA\Response(response=401, description="Unauthenticated")
+     * )
      */
     public function index()
     {
@@ -28,7 +45,29 @@ class SaverCategoryController extends Controller
     }
 
     /**
-     * Store a newly created resource in storage.
+     * @OA\Post(
+     *     path="/api/categories",
+     *     summary="Create a new category",
+     *     tags={"Categories"},
+     *     security={{"sanctum":{}}},
+     *     @OA\RequestBody(
+     *         required=true,
+     *         description="Category data",
+     *         @OA\JsonContent(
+     *             required={"name"},
+     *             @OA\Property(property="name", type="string", example="Work"),
+     *             @OA\Property(property="icon", type="string", nullable=true, example="briefcase-icon"),
+     *             @OA\Property(property="color", type="string", nullable=true, example="#FF0000")
+     *         )
+     *     ),
+     *     @OA\Response(
+     *         response=201,
+     *         description="Category created successfully.",
+     *         @OA\JsonContent(ref="#/components/schemas/SaverCategory")
+     *     ),
+     *     @OA\Response(response=401, description="Unauthenticated"),
+     *     @OA\Response(response=422, description="Validation error")
+     * )
      */
     public function store(StoreCategoryRequest $request): JsonResponse
     {
@@ -43,7 +82,27 @@ class SaverCategoryController extends Controller
     }
 
     /**
-     * Display the specified resource.
+     * @OA\Get(
+     *     path="/api/categories/{category}",
+     *     summary="Get a specific category",
+     *     tags={"Categories"},
+     *     security={{"sanctum":{}}},
+     *     @OA\Parameter(
+     *         name="category",
+     *         in="path",
+     *         required=true,
+     *         description="ID of the category",
+     *         @OA\Schema(type="integer")
+     *     ),
+     *     @OA\Response(
+     *         response=200,
+     *         description="Successful operation",
+     *         @OA\JsonContent(ref="#/components/schemas/SaverCategory")
+     *     ),
+     *     @OA\Response(response=401, description="Unauthenticated"),
+     *     @OA\Response(response=403, description="Forbidden"),
+     *     @OA\Response(response=404, description="Category not found")
+     * )
      */
     public function show(SaverCategory $category): JsonResponse
     {
@@ -53,7 +112,37 @@ class SaverCategoryController extends Controller
     }
 
     /**
-     * Update the specified resource in storage.
+     * @OA\Put(
+     *     path="/api/categories/{category}",
+     *     summary="Update a category",
+     *     tags={"Categories"},
+     *     security={{"sanctum":{}}},
+     *     @OA\Parameter(
+     *         name="category",
+     *         in="path",
+     *         required=true,
+     *         description="ID of the category to update",
+     *         @OA\Schema(type="integer")
+     *     ),
+     *     @OA\RequestBody(
+     *         required=true,
+     *         description="Category data to update",
+     *         @OA\JsonContent(
+     *             @OA\Property(property="name", type="string", example="Personal Updated"),
+     *             @OA\Property(property="icon", type="string", nullable=true, example="user-icon"),
+     *             @OA\Property(property="color", type="string", nullable=true, example="#00FF00")
+     *         )
+     *     ),
+     *     @OA\Response(
+     *         response=200,
+     *         description="Category updated successfully.",
+     *         @OA\JsonContent(ref="#/components/schemas/SaverCategory")
+     *     ),
+     *     @OA\Response(response=401, description="Unauthenticated"),
+     *     @OA\Response(response=403, description="Forbidden"),
+     *     @OA\Response(response=404, description="Category not found"),
+     *     @OA\Response(response=422, description="Validation error")
+     * )
      */
     public function update(UpdateCategoryRequest $request, SaverCategory $category): JsonResponse
     {
@@ -65,7 +154,24 @@ class SaverCategoryController extends Controller
     }
 
     /**
-     * Remove the specified resource from storage.
+     * @OA\Delete(
+     *     path="/api/categories/{category}",
+     *     summary="Delete a category",
+     *     tags={"Categories"},
+     *     security={{"sanctum":{}}},
+     *     @OA\Parameter(
+     *         name="category",
+     *         in="path",
+     *         required=true,
+     *         description="ID of the category to delete",
+     *         @OA\Schema(type="integer")
+     *     ),
+     *     @OA\Response(response=204, description="Category deleted successfully"),
+     *     @OA\Response(response=401, description="Unauthenticated"),
+     *     @OA\Response(response=403, description="Forbidden"),
+     *     @OA\Response(response=404, description="Category not found"),
+     *     @OA\Response(response=422, description="Cannot delete category with passwords")
+     * )
      */
     public function destroy(SaverCategory $category): JsonResponse
     {
