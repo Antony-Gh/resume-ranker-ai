@@ -51,6 +51,24 @@ Route::middleware(['auth', 'verified', 'throttle:60,1'])->group(function () {
     Route::post('/subscribe', [SubscriptionController::class, 'subscribe'])->name('subscribe');
 });
 
+// Subscription routes
+Route::middleware(['auth', 'verified'])->group(function () {
+    Route::get('/subscriptions', [App\Http\Controllers\SubscriptionController::class, 'index'])
+        ->name('subscriptions.index');
+    Route::get('/subscriptions/create', [App\Http\Controllers\SubscriptionController::class, 'create'])
+        ->name('subscriptions.create');
+    Route::post('/subscriptions', [App\Http\Controllers\SubscriptionController::class, 'store'])
+        ->name('subscriptions.store');
+    Route::get('/subscriptions/{id}', [App\Http\Controllers\SubscriptionController::class, 'show'])
+        ->name('subscriptions.show');
+    Route::get('/subscriptions/{id}/edit', [App\Http\Controllers\SubscriptionController::class, 'edit'])
+        ->name('subscriptions.edit');
+    Route::put('/subscriptions/{id}', [App\Http\Controllers\SubscriptionController::class, 'update'])
+        ->name('subscriptions.update');
+    Route::post('/subscriptions/{id}/cancel', [App\Http\Controllers\SubscriptionController::class, 'cancel'])
+        ->name('subscriptions.cancel');
+});
+
 // routes/web.php or routes/api.php
 Route::middleware('web')->get('/sanctum/csrf-cookie', function () {
     return response()->json(['csrfToken' => csrf_token()]);

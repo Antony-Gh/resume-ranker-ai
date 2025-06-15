@@ -25,18 +25,68 @@ class SecureHeadersMiddleware
         $response = $next($request);
 
         // Set secure headers to enhance security
-        $response->headers->set('Strict-Transport-Security', 'max-age=31536000; includeSubDomains'); // Enforce HTTPS for 1 year (31536000 seconds)
-        $response->headers->set('X-Content-Type-Options', 'nosniff'); // Prevent MIME type sniffing
+        $response->headers->set('Strict-Transport-Security', 'max-age=31536000; includeSubDomains; preload');
+        $response->headers->set('X-Content-Type-Options', 'nosniff');
+        $response->headers->set('X-Frame-Options', 'SAMEORIGIN');
+        $response->headers->set('X-XSS-Protection', '1; mode=block');
+        $response->headers->set('Referrer-Policy', 'strict-origin-when-cross-origin');
+        $response->headers->set('Permissions-Policy', 'camera=(), microphone=(), geolocation=(), interest-cohort=()');
 
-        $response->headers->set('X-Frame-Options', 'SAMEORIGIN'); // Prevent click jacking by allowing framing only from the same origin
+        // Skip CSP for specific paths like admin routes that might need more flexibility
+        if (!$this->shouldSkipCsp($request)) {
+            $response->headers->set('Content-Security-Policy', $this->getContentSecurityPolicy());
+        }
 
-        $response->headers->set('X-XSS-Protection', '1; mode=block'); // Enable XSS filtering and block the response if an attack is detected
+        return $response;
+    }
 
-        $response->headers->set('Referrer-Policy', 'strict-origin-when-cross-origin'); // Control the referrer information sent with requests
+    /**
+     * Get the Content Security Policy directives.
+     *
+     * @return string
+     */
+    protected function getContentSecurityPolicy(): string
+    {
+        return implode('; ', [
+            "default-src 'self'",
+            "script-src 'self' https://cdn.jsdelivr.net https://ajax.googleapis.com https://www.google-analytics.com 'unsafe-inline' 'unsafe-eval'",
+            "style-src 'self' https://cdn.jsdelivr.net https://fonts.googleapis.com 'unsafe-inline'",
+            "img-src 'self' data: https://www.google-analytics.com https://*.googleapis.com",
+            "font-src 'self' https://fonts.gstatic.com https://cdn.jsdelivr.net",
+            "connect-src 'self' https://www.google-analytics.com",
+            "media-src 'self'",
+            "frame-src 'self'",
+            "object-src 'none'",
+            "base-uri 'self'",
+            "form-action 'self'",
+            "frame-ancestors 'self'",
+            "block-all-mixed-content",
+            "upgrade-insecure-requests"
+        ]);
+    }
 
-        // Optional: Implement Content Security Policy (CSP) for additional security
-        // $response->headers->set('Content-Security-Policy', "default-src 'self';"); // Example CSP header
+    /**
+     * Determine if CSP should be skipped for the current request.
+     *
+     * @param Request $request
+     * @return bool
+     */
+    protected function shouldSkipCsp(Request $request): bool
+    {
+        $skipPaths = [
+            'admin/editor/*',
+            'tinymce/*',
+            'filemanager/*',
+        ];
 
-        return $response; // Return the response with the added headers
+        $path = $request->path();
+
+        foreach ($skipPaths as $skipPath) {
+            if (fnmatch($skipPath, $path)) {
+                return true;
+            }
+        }
+
+        return false;
     }
 }

@@ -1,8 +1,5 @@
 <?php
 
-use App\Http\Controllers\ProfileController;
-use App\Http\Controllers\DashboardController;
-use App\Http\Controllers\SubscriptionController;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Auth\AuthController;
@@ -80,4 +77,10 @@ Route::middleware(['auth:sanctum', 'throttle:60,1'])->group(function () {
     Route::get('/user', function (Request $request) {
         return $request->user();
     });
+
+    // Subscription API routes
+    Route::get('/subscriptions/{id}', [App\Http\Controllers\SubscriptionController::class, 'getSubscription'])
+        ->name('api.subscriptions.get');
+    Route::get('/subscriptions/active', [App\Http\Controllers\SubscriptionController::class, 'getActiveSubscription'])
+        ->name('api.subscriptions.active');
 });

@@ -30,7 +30,7 @@ jobs:
         with:
           php-version: 8.2
           extensions: mbstring, xml, ctype, json, curl, bcmath
-          coverage: none
+          coverage: xdebug
 
       - name: Install Dependencies
         run: composer install --no-interaction --prefer-dist --optimize-autoloader
@@ -65,16 +65,38 @@ jobs:
           DB_PASSWORD: root
         run: php artisan migrate --force
 
-      # - name: Run Tests
-      #   env:
-      #     DB_CONNECTION: mysql
-      #     DB_HOST: 127.0.0.1
-      #     DB_PORT: 3306
-      #     DB_DATABASE: resume_ranker_ai
-      #     DB_USERNAME: root
-      #     DB_PASSWORD: root
-      #   run: php artisan test
+      - name: Install NPM Dependencies
+        run: npm ci
+
+      - name: Build Frontend Assets
+        run: npm run production
+
+      - name: Run Tests
+        env:
+          DB_CONNECTION: mysql
+          DB_HOST: 127.0.0.1
+          DB_PORT: 3306
+          DB_DATABASE: resume_ranker_ai
+          DB_USERNAME: root
+          DB_PASSWORD: root
+        run: php artisan test --coverage
+
+      - name: Upload Coverage Reports
+        uses: codecov/codecov-action@v3
+        with:
+          token: ${{ secrets.CODECOV_TOKEN }}
+          files: ./coverage.xml
+          fail_ci_if_error: false
+
+      - name: Run PHP Code Sniffer
+        run: |
+          composer require --dev squizlabs/php_codesniffer
+          ./vendor/bin/phpcs --standard=PSR12 app
+
+      - name: Run PHP Static Analysis
+        run: |
+          composer require --dev phpstan/phpstan
+          ./vendor/bin/phpstan analyse app --level=5
 
 
 
-      
