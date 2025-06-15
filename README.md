@@ -18,6 +18,7 @@ A Laravel-based application for ranking and analyzing resumes using AI technolog
 - Node.js and NPM
 - MySQL 5.7 or higher
 - Laravel 11.x
+- Docker and Docker Compose (for Sail setup)
 
 ## Installation
 
@@ -92,6 +93,57 @@ docker-compose up -d
 ```
 
 Access the application at http://localhost:8000
+
+## Laravel Sail Setup
+
+Laravel Sail is a light-weight command-line interface for interacting with Laravel's default Docker development environment.
+
+### Using the provided scripts
+
+#### For Linux/macOS:
+
+1. Initialize the Sail environment:
+```bash
+./sail-init.sh
+```
+
+2. Run and manage the Sail environment:
+```bash
+./sail-run.sh
+```
+
+#### For Windows:
+
+1. Initialize the Sail environment:
+```batch
+sail-init.bat
+```
+
+2. Run and manage the Sail environment:
+```batch
+sail-run.bat
+```
+
+### Manual Sail Commands
+
+If you prefer to use Sail commands directly:
+
+```bash
+# Start Sail
+./vendor/bin/sail up
+
+# Start Sail in detached mode
+./vendor/bin/sail up -d
+
+# Stop Sail
+./vendor/bin/sail down
+
+# Run migrations
+./vendor/bin/sail artisan migrate
+
+# Run tests
+./vendor/bin/sail test
+```
 
 ## Testing
 

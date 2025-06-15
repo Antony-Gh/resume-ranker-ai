@@ -92,5 +92,7 @@ _ide_helper.php
 /robots.txt
 /commands.txt
 *.txt
+*.bat
+*.sh
 .cursorindexingignore
 .specstory/
