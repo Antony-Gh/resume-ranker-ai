@@ -29,7 +29,7 @@ class SecureHeadersMiddleware
         $response->headers->set('X-Content-Type-Options', 'nosniff');
         $response->headers->set('X-Frame-Options', 'SAMEORIGIN');
         $response->headers->set('X-XSS-Protection', '1; mode=block');
-        $response->headers->set('Referrer-Policy', 'strict-origin-when-cross-origin');
+        $response->headers->set('Referrer-Policy', 'strict-origin-when-cross-origin'); // Control the referrer information sent with requests
         $response->headers->set('Permissions-Policy', 'camera=(), microphone=(), geolocation=(), interest-cohort=()');
 
         // Skip CSP for specific paths like admin routes that might need more flexibility
@@ -50,9 +50,9 @@ class SecureHeadersMiddleware
         return implode('; ', [
             "default-src 'self'",
             "script-src 'self' https://cdn.jsdelivr.net https://ajax.googleapis.com https://www.google-analytics.com 'unsafe-inline' 'unsafe-eval'",
-            "style-src 'self' https://cdn.jsdelivr.net https://fonts.googleapis.com 'unsafe-inline'",
+            "style-src 'self' https://cdn.jsdelivr.net https://fonts.googleapis.com https://use.fontawesome.com https://fonts.bunny.net 'unsafe-inline'",
             "img-src 'self' data: https://www.google-analytics.com https://*.googleapis.com",
-            "font-src 'self' https://fonts.gstatic.com https://cdn.jsdelivr.net",
+            "font-src 'self' https://fonts.gstatic.com https://cdn.jsdelivr.net https://use.fontawesome.com https://fonts.bunny.net",
             "connect-src 'self' https://www.google-analytics.com",
             "media-src 'self'",
             "frame-src 'self'",
